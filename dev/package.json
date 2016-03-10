@@ -1,0 +1,22 @@
+{
+  "name": "my-fast-as-heck-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijmccallum/ijmccallum.github.io.git"
+  },
+  "author": "Iain J McCallum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ijmccallum/ijmccallum.github.io/issues"
+  },
+  "homepage": "ijmccallum.github.io",
+  "devDependencies": {
+    "gulp-htmlmin": "^1.3.0"
+  }
+}
