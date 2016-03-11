@@ -6,7 +6,15 @@
 ">
     <title>←?</title>
     <style>
-      body { font-family: sans-serif; }
+    html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+.loop-context {position: relative;
+  height: 100%;
+  overflow: auto;}
+      body { font-family: sans-serif;}
       section { padding: 40vh 10vw; }
       svg { height: 10vw; width: 100%; }
       .b { fill:#25557F; } /* make gradient! Or filter / something fun */
@@ -19,8 +27,10 @@
   </head>
   <body>
 
+<div class="loop-context">
+<div>
     <section>
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="meet" viewBox="0 0 1227 622">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1227 622">
         <polygon class="b" points="404,0 404,203 208,203 208,0 0,0 0,622 208,622 208,420 404,420 404,622 612,622 612,0 "/>
         <rect x="822" class="b" width="195" height="203"/>
         <rect x="822" class="b" y="420" width="195" height="202"/>
@@ -32,7 +42,7 @@
     </section>
 
     <section>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="meet"  width="77px" height="107px" viewBox="0 0 77 107" >
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="107px" viewBox="0 0 77 107" >
           <polygon class="b" points="16.8,1 1,15.8 1,106 76,106 76,1 "/>
         </svg>
       <hr>
@@ -67,6 +77,150 @@
     <section> 
          <p><a href="#">WikiLogic</a> | <a href="#">Github</a> | <a href="#">LinkedIn</a></p>
     </section>
+    </div>
+
+    <div class="is-clone">
+
+     <section>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1227 622">
+        <polygon class="b" points="404,0 404,203 208,203 208,0 0,0 0,622 208,622 208,420 404,420 404,622 612,622 612,0 "/>
+        <rect x="822" class="b" width="195" height="203"/>
+        <rect x="822" class="b" y="420" width="195" height="202"/>
+        <rect x="208" class="f" width="196" height="203"/>
+        <rect x="208" y="420" class="f" width="196" height="203"/>
+        <polygon class="f" points="1017,0 1017,203 822,203 822,0 612,0 612,622 822,622 822,420 1017,420 1017,622 1227,622 1227,0 "/>
+      </svg>
+
+    </section>
+
+    <section>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77px" height="107px" viewBox="0 0 77 107" >
+          <polygon class="b" points="16.8,1 1,15.8 1,106 76,106 76,1 "/>
+        </svg>
+      <hr>
+      <!-- 
+      <hr>
+      <a href="#">Regular Expressions in JavaScript</a>
+      <hr>
+      <a href="#">SVG: Part 1</a> | <a href="#">Part 2</a> | <a href="#">Part 3</a>
+      -->
+      <a href="">CSS Layouts (part 3): The Future</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/css-layout-techniques-part-2">CSS Layouts (part 2): The Present - Flexbox</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/css-layout-techniques-part-1">CSS Layouts (part 1): The Past - Tables, Floats, Position, Block (&amp; inline-block!)</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/css-in-3d">CSS in 3D</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/sass-part-2-tips-and-tricks">Sass (part 2): tips and Tricks</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/sass-part-1-architecture">Sass (part 1): Architecture</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/analytics-js">Google Analytics for Front End Developers</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/service-workers">Service Workers</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/chrome-devtools">Chrom Dev tools.</a>
+      <hr>
+      <a href="http://delphicdigital.com/blog/git-commands-cheat-sheet">Git Commands cheat sheet</a>
+      <hr>
+    </section>
+
+    <section> 
+         <p><a href="#">WikiLogic</a> | <a href="#">Github</a> | <a href="#">LinkedIn</a></p>
+    </section>
+  
+    </div>
+    </div>
+
+
+    <script>
+
+    'use strict';
+
+var doc = window.document,
+  context = doc.getElementsByClassName('loop-context')[0],
+  clones = context.getElementsByClassName('is-clone'),
+  disableScroll,
+  scrollHeight,
+  scrollPos,
+  clonesHeight,
+  i;
+
+function getScrollPos() {
+  return (context.pageYOffset || context.scrollTop) - (context.clientTop || 0);
+}
+
+function setScrollPos(pos) {
+  context.scrollTop = pos;
+}
+
+function getClonesHeight() {
+  clonesHeight = 0;
+  i = 0;
+
+  for (i; i < clones.length; i += 1) {
+    clonesHeight = clonesHeight + clones[i].offsetHeight;
+  }
+
+  return clonesHeight;
+}
+
+function reCalc() {
+  scrollPos = getScrollPos();
+  scrollHeight = context.scrollHeight;
+  clonesHeight = getClonesHeight();
+
+  if (scrollPos <= 0) {
+    setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
+  }
+}
+
+// Calculate variables
+window.requestAnimationFrame(reCalc);
+
+function scrollUpdate() {
+  if (!disableScroll) {
+    scrollPos = getScrollPos();
+
+    if (clonesHeight + scrollPos >= scrollHeight) {
+      // Scroll to the top when you’ve reached the bottom
+      setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
+      disableScroll = true;
+    } else if (scrollPos <= 0) {
+      // Scroll to the bottom when you reach the top
+      setScrollPos(scrollHeight - clonesHeight);
+      disableScroll = true;
+    }
+  }
+
+  if (disableScroll) {
+    // Disable scroll-jumping for a short time to avoid flickering
+    window.setTimeout(function () {
+      disableScroll = false;
+    }, 40);
+  }
+}
+
+context.addEventListener('scroll', function () {
+  window.requestAnimationFrame(scrollUpdate);
+}, false);
+
+window.addEventListener('resize', function () {
+  window.requestAnimationFrame(reCalc);
+}, false);
+
+
+
+
+
+// Just for the demo: Center the middle block on page load
+window.onload = function () {
+  setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (window.innerHeight - clones[0].offsetHeight) / 2));
+};
+
+       
+    </script>
 
   </body>
 </html>
