@@ -1,21 +1,15 @@
-
-##Functional 
- 
- - *Haskell*
+#My Code Bucket list
 
 ---
 
-##Dynamic
+##Languages:
 
- - *JavaScript*
- - Ruby
- - Python
-
----
-
-##Static / Strongly Typed
-
- - *C#*
- - Golang, I think?
+ - Dynamic : *JavaScript*
+ - Functional :  *Haskell*
+ - Static : *C#*
 
 ---
+
+##Fun things:
+
+ - Javascript your Genome: http://genomejs.readme.io/docs/what-do-i-do
