@@ -8,5 +8,5 @@ One of the eternal questions
  - Would like it to be stand alone
 
 |                                                              | Requires     |
-|--------------------------------------------------------------|:------------:|
+|--------------------------------------------------------------|--------------|
 | [Foundation Reveal](https://codepen.io/macsupport/pen/ByqNJg)|              |
