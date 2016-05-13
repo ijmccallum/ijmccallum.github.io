@@ -16,6 +16,7 @@
 
 ---
 
-##Neverending frameworks:
+##Neverending frameworks / tools:
 
  - Angular 2, maybe start with the cli: https://github.com/angular/angular-cli
+ - RxJS, : http://reactivex.io/
