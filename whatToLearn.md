@@ -1,10 +1,10 @@
-#My Code Bucket list
+#Code Bucket list
 
 ---
 
 ##Languages:
 
- - Dynamic : *JavaScript*
+ - Dynamic : *JavaScript* [read these](https://github.com/getify/You-Dont-Know-JS)
  - Functional :  *Haskell*
  - Static : *C#*
 
