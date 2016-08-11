@@ -27,4 +27,4 @@
 ##Mini project ideas
 
  - Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
- - Mad console program: makes it look like you are doing something phenominal but you're just typing randomly
+ - [Console Madness](https://github.com/ijmccallum/consoleMadness): makes it look like you are doing something phenominal but you're just typing randomly
