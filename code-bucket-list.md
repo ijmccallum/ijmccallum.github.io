@@ -20,3 +20,10 @@
 
  - Angular 2, maybe start with the cli: https://github.com/angular/angular-cli
  - RxJS, : http://reactivex.io/
+
+
+---
+
+##Mini project ideas
+
+ - Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
