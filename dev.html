@@ -66,7 +66,10 @@
     </section>
 
     <script type="text/javascript">
-    setTimeout(function(){ var t = window.performance.timing.loadEventEnd - window.performance.timing.connectStart;console.log('load time:', t, 'ms'); }, 0);
+    setTimeout(function(){ 
+      var t = window.performance.timing.loadEventEnd - window.performance.timing.connectStart;
+      console.log('load time: ', t, 'ms'); if (t < 1000){console.log('Yeay!');}
+    }, 0);
     </script>
 
   </body>
