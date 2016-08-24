@@ -66,8 +66,7 @@
     </section>
 
     <script type="text/javascript">
-      var t = window.performance.timing.loadEventEnd - window.performance.timing.connectStart;
-      console.log('load time:', t, 'ms');
+    setTimeout(function(){ var t = window.performance.timing.loadEventEnd - window.performance.timing.connectStart;console.log('load time:', t, 'ms'); }, 0);
     </script>
 
   </body>
