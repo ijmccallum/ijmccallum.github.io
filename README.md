@@ -1,4 +1,3 @@
 #Hi
 
- - note for tiny house http://www.arcat.com/
- - static this as a nojs spa: http://voiceandtone.com/press-release/ 
+ - http://codepen.io/bennettfeely/pen/wWVZAW <- lets do this for a menu!
