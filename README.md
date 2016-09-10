@@ -1,3 +1,3 @@
 #Hi
 
- - http://codepen.io/bennettfeely/pen/wWVZAW <- lets do this for a menu!
+ - https://css-tricks.com/front-end-developer-aware/ <- some how touch on each of these
