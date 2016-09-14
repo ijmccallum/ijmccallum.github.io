@@ -4,9 +4,8 @@
 
 ##Languages to learn:
 
- - [x] Dynamic : *JavaScript* 
- - [ ] Static : *C#*
- - [ ] Functional :  *Haskell*
+ - [x] *JavaScript* 
+ - [ ] *C#*
 
 * checked boxes don't actually mean I've "finished" learning a language. That would be insane.
 
