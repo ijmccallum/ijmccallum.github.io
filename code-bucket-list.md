@@ -24,3 +24,24 @@
 
  - [ ] [WikiLogic](https://github.com/WikiLogic/WikiLogic): in progress!
  - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means.
+
+---
+
+##Tiny project ideas
+
+```
+var fibCount = 0;
+var printFib = function(next, prev){
+	fibCount++;
+	if (next < Infinity) {
+		console.log(fibCount, next);
+		printFib(next + prev, next);
+	} else {
+		console.log(fibCount, next);
+		return;
+	}
+}
+console.time('fib to infinity');
+printFib(1, 1);
+console.timeEnd('fib to infinity');
+```
