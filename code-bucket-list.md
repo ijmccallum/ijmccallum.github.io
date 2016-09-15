@@ -29,7 +29,7 @@
 
 ##Tiny project ideas
 
-```
+```javascript
 var fibCount = 0;
 var printFib = function(next, prev){
 	fibCount++;
