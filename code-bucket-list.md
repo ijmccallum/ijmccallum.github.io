@@ -29,6 +29,7 @@
 
 ##Tiny project ideas
 
+How long does it take you to run fibonacci to infinity in your browser?
 ```javascript
 var fibCount = 0;
 var printFib = function(next, prev){
@@ -45,3 +46,4 @@ console.time('fib to infinity');
 printFib(1, 1);
 console.timeEnd('fib to infinity');
 ```
+Would be cool to implement this and send the results home somewhere to measure!
