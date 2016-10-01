@@ -23,6 +23,7 @@
 ##Big project ideas
 
  - [ ] [WikiLogic](https://github.com/WikiLogic/WikiLogic): in progress!
+ - [ ] Use [React](https://facebook.github.io/react/)? to build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
  - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means.
 
 ---
