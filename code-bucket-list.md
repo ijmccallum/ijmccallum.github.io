@@ -2,12 +2,12 @@
 
 ---
 
-##Languages to work with:
+##Languages to work with in a production app:
 
  - [x] *JavaScript* 
  - [ ] *C#*
-
-* checked boxes don't actually mean I've "finished" learning a language. That would be insane.
+ - [ ] *Haskell*
+ - [ ] *R*
 
 ---
 
