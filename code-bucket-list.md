@@ -5,7 +5,7 @@
 ##Languages to work with:
 
  - [x] *JavaScript* 
- - [ ]*C#*
+ - [ ] *C#*
 
 * checked boxes don't actually mean I've "finished" learning a language. That would be insane.
 
