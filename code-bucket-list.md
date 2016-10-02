@@ -18,6 +18,7 @@
  - [Console Madness](https://github.com/ijmccallum/consoleMadness): makes it look like you are doing something phenominal but you're just typing randomly
  - JS: Javascript your Genome: http://genomejs.readme.io/docs/what-do-i-do - 1st get my genome sequenced, then do things with the data!
  - JS: text on the site is whitel, site bg is white. Except for a black dot in the middle with "HI" in it. Click the dot expands another dot of color inside, the black becomes the border.  The readius of the new dot depends on the length of click, but nothing happens until you let go. The color depends on the orientation of the mouse (leave this to be discovered). As the layers of color expand the white text / links of the site are revealed.
+ - R: do a [Kaggle](https://www.kaggle.com/competitions) competition.
 
 ---
 
