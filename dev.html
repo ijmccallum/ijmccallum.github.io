@@ -17,7 +17,7 @@
       section.ctr { transform: translate(-50%,84px); }
       .dot-wrap { z-index: -1;}
       .dot { border-radius: 50%; transition: padding 0.2s ease; }
-      .hi { z-index: 1; }
+      .hi { z-index: 1; cursor: pointer; }
       #writing a { display: block; }
     </style>
   </head>
@@ -25,7 +25,9 @@
 
     <div class="dot-wrap ctr">
       <div class="dot" style="background:black;padding:20px;">
-        <div id="dot"></div>
+        <div class="dot">
+          <div id="dot"></div>
+        </div>
       </div>
     </div>
 
@@ -76,12 +78,17 @@
 
     <script type="text/javascript">
       (function(){
-        var s, diameter, color, cX = window.innerWidth / 2, cY = window.innerHeight / 2;
+        var s, diameter, color, cX = window.innerWidth / 2, cY = window.innerHeight / 2, innerDot;
         window.document.onmousedown = function(){ s = new Date().getTime(); }
         window.document.onmouseup = function(e){
           padding = "padding:" + (new Date().getTime() - s) / 1 + "px;";
           color = "background:hsla(" + ((Math.atan2(e.clientY - cY, e.clientX - cX) * 180 / Math.PI) + 180) + ", 74%, 40%, 1);";
-          document.getElementById('dot').outerHTML = '<div style="' + color + padding + '" class="dot"><div id="dot"></div></div>';
+          innerDot = '<div class="dot" style="padding:0px;' + color + '"><div id="dot"></div></div>';
+          //document.getElementById('dot').parentElement.outerHTML = '<div style="' + color + padding + '" class="dot">' + innerDot + '</div>';
+          document.getElementById('dot').outerHTML = innerDot;
+          setTimeout(function(){ 
+            document.getElementById('dot').parentElement.style.padding = ((new Date().getTime() - s) / 1) + "px";
+          }, 0);
         }
       })();
     </script>
