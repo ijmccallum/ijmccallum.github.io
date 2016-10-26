@@ -20,7 +20,8 @@
       .dot { border-radius: 50%; transition: padding 0.2s ease; }
       .hi { z-index: 1; cursor: pointer; }
       #writing { text-align: center; }
-      #writing a { display: block; white-space: nowrap; }
+      #writing a { display: block; white-space: nowrap; transition: transform 1s ease; }
+      #writing a:hover { transform: scale(1.1); transition: transform 0.2s ease;}
       .logo { display: inline-block; width: 1.4em; height: 1.4em; vertical-align: middle; }
       ::selection { background: #ffb7b7; }
     </style>
@@ -75,7 +76,7 @@
     </nav>
     
     <section id="work" class="ctr">
-      Currently I work as a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Delphic Digital</a>. Besides that I'm part of <a href="http://www.wikilogicfoundation.org/about-wikilogic/">the team behind WikiLogic</a>. I spend a lot of time writing JavaScript, HTML &amp; CSS. 
+      I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Delphic Digital</a> and a member of <a href="http://www.wikilogicfoundation.org/about-wikilogic/">team WikiLogic</a>. That's a lot of time writing JavaScript, HTML &amp; CSS. 
 
       To get in contact with me, try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularaly, or (if you're up for something more iteresting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!
     </section>
@@ -134,7 +135,6 @@
           innerDot = '<div class="dot" style="padding:0;' + color + '"><div id="dot"></div></div>';
           document.getElementById('dot').outerHTML = innerDot;
           setTimeout(function(){
-            console.log('HIHIHI');
             document.getElementById('dot').parentElement.style.padding = padding;
           },0);
           pmax = 100, pmin = 50;
