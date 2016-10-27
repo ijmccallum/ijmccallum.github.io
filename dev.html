@@ -8,7 +8,7 @@
     <style>
       .ctr { position: absolute; top: 30%; left: 50%; transform: translate(-50%,-50%); }
       html { overflow: scroll; }
-      body { font-family: sans-serif; font-size: 16px; line-height: 1.3; max-width: 524px; margin: 1rem auto; color: #a0cbff;}
+      body { font-family: sans-serif; font-size: 16px; line-height: 1.3; max-width: 524px; margin: 1rem auto; color: #a0cbff; }
       a { color:white; text-decoration: none;}
       nav { text-align: center; display: flex; justify-content: center; margin: 10px auto 16px; max-width: 500px; }
       nav a { padding: 0.5rem 1rem; position: relative; top: 40px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.5); }
@@ -17,13 +17,15 @@
       section:target { display: block; }
       section.ctr { transform: translate(-50%,84px); }
       .dot-wrap { z-index: -1;}
-      .dot { border-radius: 50%; transition: padding 0.2s ease; }
+      .dot { border-radius: 50%; transition: all 1s ease; }
       .hi { z-index: 1; cursor: pointer; }
-      #writing { text-align: center; }
+      #writing, #web { text-align: center; }
       #writing a { display: block; white-space: nowrap; transition: transform 1s ease; }
       #writing a:hover { transform: scale(1.1); transition: transform 0.2s ease;}
+      #web a { display: block; }
       .logo { display: inline-block; width: 1.4em; height: 1.4em; vertical-align: middle; }
       ::selection { background: #ffb7b7; }
+      #mouseEffects { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; }
     </style>
   </head>
   <body>
@@ -121,6 +123,8 @@
       <a href="https://www.linkedin.com/in/iainjmccallum">LinkedIn</a>
     </section>
 
+    <canvas id="mouseEffects"></canvas>
+
     
 
     <script type="text/javascript">
@@ -150,6 +154,81 @@
         sections[2].style.display = 'none';
         sections[section].style.display = 'block';
       }
+
+
+      var debounce = function(func, wait, immediate){
+        var timeout;
+        return function() {
+          var context = this, args = arguments;
+          var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      };
+
+      var canvas = document.getElementById('mouseEffects');
+      canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight;
+      var context2d = canvas.getContext("2d");
+
+      var pops = [];
+
+      var loaded = false;
+      var reload = debounce(function(x, y){
+        //this will only run when the mouse doesn't move for 500ms
+        loaded = true;
+      }, 300);
+
+      var fire = function(x, y){
+        var newPop = Object.create({
+          lifespan: 10,
+          x: x,
+          y: y
+        });
+
+        pops.push(newPop);
+
+        updatePops();
+      }
+
+      var trigger = function(x, y){
+        if (loaded) {
+          //give it that random element - hook them to the dot!
+          //future goal, different pops depending on chance
+          if (Math.random() > 0.8) { fire(x, y); }
+          loaded = false;
+        }
+      }
+
+      window.document.onmousemove = function(event){
+        trigger(event.clientX, event.clientY)
+        reload();
+      };
+
+      var drawPop = function(pop){
+        context2d.beginPath();
+        context2d.arc(pop.x, pop.y, pop.lifespan, 0, 2 * Math.PI);
+        context2d.fillStyle = "yellow";
+        context2d.fill();
+      }
+
+      var updatePops = function(){
+        context2d.clearRect(0, 0, canvas.width, canvas.height);
+
+        pops.map(function(pop, index){
+          if (pop.lifespan == 0) { pops.splice(index, 1); }
+          drawPop(pop);
+          pop.lifespan --;
+        });
+
+        if (pops.length > 0) { window.requestAnimationFrame(updatePops); }
+      }
+
+
     </script>
 
   </body>
