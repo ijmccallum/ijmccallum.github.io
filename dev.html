@@ -190,12 +190,12 @@
         //this will only run when the mouse doesn't move for 500ms
         origin = {x:x, y:y};
         loaded = true;
-      }, 0);
+      }, 100);
 
       var fire = function(x, y){
 
         var newPop = Object.create({
-          lifespan: 50,
+          lifespan: 100,
           x: x,
           y: y,
           vx: origin.x,
@@ -213,7 +213,7 @@
         if (loaded) {
           waitCounter++;      
 
-          if (waitCounter > 3) {
+          if (waitCounter > 8) {
             fire(x, y);
             loaded = false;
             waitCounter = 0;
@@ -221,9 +221,9 @@
 
         } else {
 
-          //if (Math.random() > 0.8) { //0.8
+          if (Math.random() > 0.9) { //0.8
             load(event.clientX, event.clientY);
-          //}
+          }
 
         }
       }
@@ -240,11 +240,15 @@
       }
 
       var drawLine = function(zap){
+        var zapGradient = context2d.createLinearGradient(zap.x,zap.y, zap.vx,zap.vy);
+        zapGradient.addColorStop(1, 'rgba(100,100,200,' + ( (zap.lifespan * 2) / 10) + ')');
+        zapGradient.addColorStop(0, 'rgba(100,100,200,0)');
+
         context2d.beginPath();
         context2d.moveTo(zap.x,zap.y);
         context2d.lineTo(zap.vx,zap.vy);
         context2d.lineWidth = (1/zap.lifespan) * 10;
-        context2d.strokeStyle = 'rgba(100,100,200,' + ( (zap.lifespan * 2) / 10) + ')';
+        context2d.strokeStyle = zapGradient;
         context2d.stroke();
       }
 
