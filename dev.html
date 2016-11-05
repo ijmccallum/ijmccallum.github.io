@@ -18,7 +18,7 @@
       section.ctr { transform: translate(-50%,84px); }
       .dot-wrap { z-index: -1;}
       .dot { border-radius: 50%; transition: all 1s ease; }
-      .hi { z-index: 1; cursor: pointer; }
+      .hi { z-index: 1; cursor: pointer; padding: 10px; }
       #writing, #web { text-align: center; }
       #writing a { display: block; white-space: nowrap; transition: transform 1s ease; }
       #writing a:hover { transform: scale(1.1); transition: transform 0.2s ease;}
@@ -177,57 +177,88 @@
       canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight;
       var context2d = canvas.getContext("2d");
 
-      var pops = [];
+      //'rounds' in motion
+      var zapz = [];
+      //the next one - holds the initial location
+      var origin = {};
 
+      var waitCounter = 0;
+      
       var loaded = false;
-      var reload = debounce(function(x, y){
+
+      var load = debounce(function(x, y){
         //this will only run when the mouse doesn't move for 500ms
+        origin = {x:x, y:y};
         loaded = true;
-      }, 300);
+      }, 0);
 
       var fire = function(x, y){
+
         var newPop = Object.create({
-          lifespan: 10,
+          lifespan: 50,
           x: x,
-          y: y
+          y: y,
+          vx: origin.x,
+          vy: origin.y,
+          vector: Math.atan2(y - origin.y, x - origin.x)
         });
 
-        pops.push(newPop);
+        zapz.push(newPop);
 
         updatePops();
       }
 
       var trigger = function(x, y){
+        
         if (loaded) {
-          //give it that random element - hook them to the dot!
-          //future goal, different pops depending on chance
-          if (Math.random() > 0.8) { fire(x, y); }
-          loaded = false;
+          waitCounter++;      
+
+          if (waitCounter > 3) {
+            fire(x, y);
+            loaded = false;
+            waitCounter = 0;
+          }
+
+        } else {
+
+          //if (Math.random() > 0.8) { //0.8
+            load(event.clientX, event.clientY);
+          //}
+
         }
       }
 
       window.document.onmousemove = function(event){
-        trigger(event.clientX, event.clientY)
-        reload();
+        trigger(event.clientX, event.clientY);
       };
 
-      var drawPop = function(pop){
+      var drawPop = function(zap){
         context2d.beginPath();
-        context2d.arc(pop.x, pop.y, pop.lifespan, 0, 2 * Math.PI);
-        context2d.fillStyle = "yellow";
+        context2d.arc(zap.vx, zap.vy, (1/zap.lifespan)*25 + 2, 0, 2 * Math.PI);
+        context2d.fillStyle = 'rgba(255,255,255,' + (zap.lifespan / 10) + ')';
         context2d.fill();
+      }
+
+      var drawLine = function(zap){
+        context2d.beginPath();
+        context2d.moveTo(zap.x,zap.y);
+        context2d.lineTo(zap.vx,zap.vy);
+        context2d.lineWidth = (1/zap.lifespan) * 10;
+        context2d.strokeStyle = 'rgba(100,100,200,' + ( (zap.lifespan * 2) / 10) + ')';
+        context2d.stroke();
       }
 
       var updatePops = function(){
         context2d.clearRect(0, 0, canvas.width, canvas.height);
 
-        pops.map(function(pop, index){
-          if (pop.lifespan == 0) { pops.splice(index, 1); }
-          drawPop(pop);
-          pop.lifespan --;
+        zapz.map(function(zap, index){
+          if (zap.lifespan == 0) { zapz.splice(index, 1); }
+          drawPop(zap);
+          drawLine(zap);
+          zap.lifespan--;
         });
 
-        if (pops.length > 0) { window.requestAnimationFrame(updatePops); }
+        if (zapz.length > 0) { window.requestAnimationFrame(updatePops); }
       }
 
 
