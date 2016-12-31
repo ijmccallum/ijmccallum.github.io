@@ -1,0 +1,37 @@
+.header {
+	padding: rem(15) rem($padding-mobile) rem(60);
+	text-align: center;
+
+	&__max-width-wrap {
+		max-width: $max-site-width;
+		margin: 0 auto;
+		position: relative;
+	}
+
+		// sticks to the top left on mobile 
+		&__lang-link {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+	@include breakpoint(medium){
+		&__max-width-wrap {
+			display: table;
+			width: 100%;
+		}
+
+			&__left {
+				display: table-cell;
+				vertical-align: middle;
+				width: 50%;
+				text-align: left;
+			}
+			&__right {
+				display: table-cell;
+				vertical-align: middle;
+				width: 50%;
+				text-align: right;
+			}
+	}
+}

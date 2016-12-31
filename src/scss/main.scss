@@ -1,0 +1,50 @@
+/*
+Section Guide
+------------------------------------------------------------------------------
+
+In mobile, all columns take 100% width
+
+-- Section banner--intro : (100) col--text = Text Content, background image hidden
+
+-- Section content--summary : (100/100) col--spotlight = Graphic Content / col--text = Text-Content
+   note: col--spotlight is after col--text in html for correct mobile view, then floated left for tablet and above
+
+-- Section content--summary-flip : (100/100) col--text = Text Content / col--spotlight = Graphic Content
+
+-- Section banner--schedule : (100) 100% width Text content with buttons, background image hidden
+
+-- Section content--faqs : (100/100) col--text-left = Text Content / col--text = Text Content
+
+*/
+
+
+
+/* 
+VARIABLES
+The various settings / variables that will be used throughout
+*/
+@import "0_variables/**/*.scss";
+
+/*
+MIXINS
+mixins / functions
+*/
+@import "1_mixins/**/*.scss";
+
+/*
+BASE
+The default styling for each html tag
+*/
+@import "2_base/**/*.scss";
+
+/*
+LAYOUTS
+These create the structurs within which components will live
+*/
+@import "3_layouts/**/*.scss";
+
+/*
+COMPONENTS
+BEM land
+*/
+@import "4_components/**/*.scss";
