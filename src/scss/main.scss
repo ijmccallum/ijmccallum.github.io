@@ -1,29 +1,10 @@
-/*
-Section Guide
-------------------------------------------------------------------------------
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-In mobile, all columns take 100% width
+$pad: 20;
 
--- Section banner--intro : (100) col--text = Text Content, background image hidden
-
--- Section content--summary : (100/100) col--spotlight = Graphic Content / col--text = Text-Content
-   note: col--spotlight is after col--text in html for correct mobile view, then floated left for tablet and above
-
--- Section content--summary-flip : (100/100) col--text = Text Content / col--spotlight = Graphic Content
-
--- Section banner--schedule : (100) 100% width Text content with buttons, background image hidden
-
--- Section content--faqs : (100/100) col--text-left = Text Content / col--text = Text Content
-
-*/
-
-
-
-/* 
-VARIABLES
-The various settings / variables that will be used throughout
-*/
-@import "0_variables/**/*.scss";
+$black: #222;
+$white: #eee;
+$accent-color: #6dfafb;
 
 /*
 MIXINS

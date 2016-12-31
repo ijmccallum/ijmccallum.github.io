@@ -1,0 +1,15 @@
+html { min-height: 100%; }
+body {
+	min-height: calc(100vh - #{rem(2 * $pad)});
+
+	background: #222;
+	margin: rem($pad);
+	border: 1px solid #eee;
+	padding: rem($pad);
+	color: #eee;
+
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: rem($pad);
+	-webkit-font-smoothing: antialiased;
+}

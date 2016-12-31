@@ -1,0 +1,14 @@
+a {
+    color: $accent-color;
+    text-decoration: none;
+
+    background-image: linear-gradient(transparent 50%, $white 50%);
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 95%;
+    text-shadow: .03em 0 0 $black,.06em 0 0 $black,.09em 0 0 $black,.12em 0 0 $black,.15em 0 0 $black,-.03em 0 0 $black,-.06em 0 0 $black,-.09em 0 0 $black,-.12em 0 0 $black,-.15em 0 0 $black;
+
+    &:hover {
+        background-image: linear-gradient(transparent 50%, $accent-color 50%);
+    }
+}
