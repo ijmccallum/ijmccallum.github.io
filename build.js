@@ -9,7 +9,7 @@ var del         = require('del');
 var siteStructure = {
     srcFile: "me.html",
     children: [
-        { srcFile: "hub-pre-zip.html", distDir: "hub/pre/index.html" }
+        { srcFile: "child.html", distDir: "child/index.html" }
     ],
 }
 
