@@ -1,0 +1,19 @@
+.columns {
+    display: flex;
+
+    &__col {
+        padding: 0 rem($pad / 2);
+    }
+
+    @include breakpoint(small) {
+        &__col {
+            width: 50%;
+        }
+    }
+
+    @include breakpoint(marge) {
+        &__col {
+            width: 33%;
+        }
+    }
+}

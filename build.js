@@ -94,6 +94,6 @@ Metalsmith(__dirname)
   .use(debug())
   .build(function(err) {
     if (err) {
-        conole.log('metalsmith build error: ', err);
+        console.log('metalsmith build error: ', err);
     };
   });
