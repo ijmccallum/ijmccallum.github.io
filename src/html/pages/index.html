@@ -10,20 +10,20 @@ title: Me
 
 <header class="header"></header>
 
-<div class="columns">
-
+<div class="columns width-wrap">
+  
   <div class="columns__col">
-    <section class="card">
-        <h2>Work</h2>
-      I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Delphic Digital</a> and a member of <a href="http://www.wikilogicfoundation.org/about-wikilogic/">team WikiLogic</a>. That's a lot of time writing JavaScript, HTML &amp; CSS. 
+    <section class="card card--work">
+        <h2 class="card__title">Work</h2>
+      <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Delphic Digital</a> and Chair of the Board for the <a href="http://www.wikilogicfoundation.org/about-wikilogic/">WikiLogic Foundation</a>. That's a lot of time writing JavaScript, HTML &amp; CSS. 
 
-      To get in contact with me, try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularaly, or (if you're up for something more iteresting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!
+      To get in contact with me, try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularaly, or (if you're up for something more iteresting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
     </section>
   </div>
 
   <div class="columns__col">
-    <section class="card">
-      <h2>Writing</h2>
+    <section class="card card--writing">
+      <h2 class="card__title">Writing</h2>
       <!-- 
       <a href="#">.htaccess</a>
       <a href="#">Redux</a>
@@ -31,88 +31,109 @@ title: Me
       <a href="#">SVG: Part 2</a>
       <a href="#">SVG: Part 1</a>
       -->
-      <div class="post-link">
-        <a href="http://codepen.io/ijmccallum/post/redux">
-          {{> logo_codepen}} Redux: attempting a simple overview
-        </a>
+
+      <div class="blog blog--codepen">
+        <div class="blog__logo">          
+          {{> logo_codepen}}
+        </div>
+
+        <div class="blog__link-list">
+          <div class="blog__post">
+            <a href="http://codepen.io/ijmccallum/post/redux">
+              Redux: attempting a simple overview
+            </a>
+          </div>
+
+          <div class="blog__post">
+            <a href="http://codepen.io/ijmccallum/post/regular-expressions-in-javascript">
+              Regular Expressions in JavaScript
+            </a>
+          </div>
+
+        </div>
       </div>
 
-      <div class="post-link">
-        <a href="http://codepen.io/ijmccallum/post/regular-expressions-in-javascript">
-          {{> logo_codepen}} Regular Expressions in JavaScript
-        </a>
-      </div>
+      <div class="blog blog--delphic">
+        <div class="blog__logo">
+          {{> logo_delphic}}
+        </div>
 
-      <div class="post-link">
-        <a href="http://www.delphicdigital.com/blog/css-layout-techniques-part-3">
-          {{> logo_delphic}} CSS Layouts (part 3): The Future - Grids
-        </a>
-      </div>
+        <div class="blog__link-list">
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/css-layout-techniques-part-2">
-          {{> logo_delphic}} CSS Layouts (part 2): The Present - Flexbox
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://www.delphicdigital.com/blog/css-layout-techniques-part-3">
+              CSS Layouts (part 3): The Future - Grids
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/css-layout-techniques-part-1">
-          {{> logo_delphic}} CSS Layouts (part 1): The Past - Everything else
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/css-layout-techniques-part-2">
+              CSS Layouts (part 2): The Present - Flexbox
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/css-in-3d">
-          {{> logo_delphic}} CSS in 3D
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/css-layout-techniques-part-1">
+              CSS Layouts (part 1): The Past - Everything else
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/sass-part-2-tips-and-tricks">
-          {{> logo_delphic}} Sass (part 2): tips and Tricks
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/css-in-3d">
+              CSS in 3D
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/sass-part-1-architecture">
-          {{> logo_delphic}} Sass (part 1): Architecture
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/sass-part-2-tips-and-tricks">
+              Sass (part 2): tips and Tricks
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/analytics-js">
-          {{> logo_delphic}} Google Analytics for Front End Developers
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/sass-part-1-architecture">
+              Sass (part 1): Architecture
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/service-workers">
-          {{> logo_delphic}} Service Workers
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/analytics-js">
+              Google Analytics for Front End Developers
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/chrome-devtools">
-          {{> logo_delphic}} Chrom Dev tools.
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/service-workers">
+              Service Workers
+            </a>
+          </div>
 
-      <div class="post-link">
-        <a href="http://delphicdigital.com/blog/git-commands-cheat-sheet">
-          {{> logo_delphic}} Git Commands cheat sheet
-        </a>
-      </div>
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/chrome-devtools">
+              Chrom Dev tools.
+            </a>
+          </div>
 
+          <div class="blog__post">
+            <a href="http://delphicdigital.com/blog/git-commands-cheat-sheet">
+              Git Commands cheat sheet
+            </a>
+          </div>
+
+        </div>
+      <div>
     </section>
   </div>
 
   <div class="columns__col">
-    <section class="card">
-      <h2>Web</h2>
-      <a href="https://twitter.com/IJMcCallum">Twitter</a>
-      <a href="https://github.com/ijmccallum">Github</a>
-      <a href="http://codepen.io/ijmccallum/">CodePen</a>
-      <a href="https://www.linkedin.com/in/iainjmccallum">LinkedIn</a>
+    <section class="card card--web">
+      <h2 class="card__title">Web</h2>
+      <div class="social-links">
+        <a href="https://twitter.com/IJMcCallum">Twitter</a>
+        <a href="https://github.com/ijmccallum">Github</a>
+        <a href="http://codepen.io/ijmccallum/">CodePen</a>
+        <a href="https://www.linkedin.com/in/iainjmccallum">LinkedIn</a>
+      </div>
     </section>
   </div>
 

@@ -11,4 +11,9 @@ a {
     &:hover {
         background-image: linear-gradient(transparent 50%, $accent-color 50%);
     }
+
+    &::selection { 
+        background: $accent-color;
+        text-shadow: none; 
+    }
 }

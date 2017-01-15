@@ -1,19 +1,36 @@
 .columns {
-    display: flex;
+    $b:&;
+    padding: 0 rem($pad / 2);
 
     &__col {
         padding: 0 rem($pad / 2);
+        margin-bottom: rem($pad);
     }
 
     @include breakpoint(small) {
+        display: flex;
+        flex-wrap: wrap;
         &__col {
             width: 50%;
+            order: 2;
+            //move the last to the top and full width it.
+            &:nth-child(3) {
+                order: 1;
+                width: 100%;
+            }
         }
     }
 
     @include breakpoint(marge) {
+
         &__col {
             width: 33%;
+            
+            //and reset the last
+            &:nth-child(3) {
+                order: 3;
+                width: 33%;
+            }
         }
     }
 }
