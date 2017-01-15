@@ -1,3 +1,9 @@
 .social-links {
-    
+    display: flex;
+
+    .logo {
+        width: rem(30);
+        max-height: rem(30);
+        margin: 4px;
+    }
 }
