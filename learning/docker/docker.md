@@ -1,13 +1,32 @@
 # What is docker
 
+I think the best way to start is to give a run through of how you'd get going with a project that has been "Dockerized". For fun, lets also imagin you're on a brand new machine with none of your usual dev tooling on it yet. You'll need git (though it's not technically necessary) and docker installed. With that done:
+
+1. clone the repo
+2. run `docker-compose up`
+
+Now if the project has been set up responsibly, it should be up and running on your local machine! It might be running in one container, it might be in a swarm of containers, it might be minecraft! If you're lucky - you may even have a development environment running in a continer, with webpack / yarn / node / something else really cool and more up to date (I'm assuming the tools I've just mentioned have already been forgotten by the JS community).
+
+---
+
+## Where did all that just come from?
+
+When you run `docker-compose up` a lot of different things might happen depending on the project. The file that conducts it all is (by default) the `docker-compose.yml` file. You can name it anything else but you'll have to pass it in as a flag to the command.
+
+
+
+
+
+
+
+
+
 Phase 1 of becoming a developer: I had tools installed on my dev machine, Wamp Mamp Xampp / node / .net etc, and another set on live servers.
 Phase 2: In come virtualization tools like Virtualbox & vagrant. For me they were just a bit too intense on resources so I only really played with them, but never used them for serious development.
 Phase 3: I've just set up Docker to manage virtual machines for a rather complex project (Wikilogic) on my local and on the live servers, and it's clicking, this is definetly a thing I'm not going to put down.
 
 So here's how this project with Docker now goes for set up (assuming Docker & Git are installed):
 
-1. clone the repo
-2. run `docker-compose up`
 
 Now there might be one or a number of virtual machines running on my local, each handling a single service like running a database, a load balancer, a small number of web servers, pretty much anything (there's even one with minecraft on it).
 
