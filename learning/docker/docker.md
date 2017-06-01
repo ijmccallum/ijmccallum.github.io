@@ -11,7 +11,19 @@ Now if the project has been set up responsibly, it should be up and running on y
 
 ## Where did all that just come from?
 
-When you run `docker-compose up` a lot of different things might happen depending on the project. The file that conducts it all is (by default) the `docker-compose.yml` file. You can name it anything else but you'll have to pass it in as a flag to the command.
+There are a few layers to docker: 
+
+|                     |                     | Description                                                         |
+|---------------------|---------------------|---------------------------------------------------------------------|
+| Dockerfile          | Image               | Defines the creation of an image & the software that runs inside it |
+| docker-compose.yml  | A network of Images | Defines more complex instructions for running one or many images    |
+| `docker-machine`    | A VM provisioner    | Installs docker on an VM (virtualbox / AWS / Digital Ocean ...)     |
+| Swarm mode          |                     |                                                                     |
+
+Look for a `docker-compose.yml` file. It's a bit like npm scripts, a place that start up commands can be configured. Here you'll see configuration for each container assuming there is more than one.
+
+
+When you run `docker-compose up` a lot of different things might happen depending on the project. The file that conducts it all is (by default) the `docker-compose.yml` file.
 
 
 
