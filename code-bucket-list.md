@@ -50,3 +50,9 @@ printFib(1, 1);
 console.timeEnd('fib to infinity');
 ```
 Would be cool to implement this and send the results home somewhere to measure!
+
+Book to read for WL:
+
+probabilistic reasoning in intelligent systems networks of plausible inference
+
+causality models reasoning and inference
