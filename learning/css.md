@@ -45,6 +45,12 @@ Tools:
   - Multi class modifiers allow parent components simpler tweaks, eg `.thing .btn { tweak }` vs` .thing .btn, .thing .btn-primary, .thing .btn-danger, .thing .btn-etc { tweak }`
   - CSS should be maintainable first. Pre-processors and compression nullify concerns about the size or aesthetics of the output CSS / HTML.
 
+## [BEMIT Taking BEM further with ITCSS](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/)
+
+ - When reading the markup BEM tells you what classes are related to each other (the namespace they're in).
+ - Namespacing by the type of component (`u-` for utility, `o-` object (these will need clear defenitions), etc)
+ - Responsive suffixes `class@m` for the medium breakpoint, `class@s` for the small...
+
 ## [Functional CSS](http://eng.wealthfront.com/2013/08/20/functional-css-fcss/)
 
  - Using namespacing to simulate scope in CSS (essentially BEM)
