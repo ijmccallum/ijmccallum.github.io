@@ -1,7 +1,11 @@
 Naming methodologies:
 
  - Modular (eg BEM)
- - Atomic
+ - BEM
+ - ITCSS
+ - OOCSS / Atomic
+ - ECSS
+ - SMACSS
 
 Grid / Layout methodologies:
 
