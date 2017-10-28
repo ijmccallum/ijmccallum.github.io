@@ -1,0 +1,100 @@
+{
+    "articles": [
+        {
+            "title": "SVG 101: Setting Up",
+            "description": "blah blah",
+            "url": "http://herodigital.com/2017/10/03/svg-101-setting-up/",
+            "date": "date"
+        },
+        {
+            "title": "Dockerizing Wikilogic",
+            "description": "blah blah",
+            "url": "http://www.wikilogicfoundation.org/dockerizing-wikilogic/",
+            "date": "date"
+        },
+        {
+            "title": "Redux: attempting a simple overview",
+            "description": "blah blah",
+            "url": "http://codepen.io/ijmccallum/post/redux",
+            "date": "date"
+        },
+        {
+            "title": "Regular expressions in Javascript, why so painful!?!",
+            "description": "blah blah",
+            "url": "http://codepen.io/ijmccallum/post/regular-expressions-in-javascript",
+            "date": "date"
+        },
+        {
+            "title": "Two feds on Reactjs, Keeping Delphic on the Cutting Edge",
+            "description": "blah blah",
+            "url": "http://www.delphicdigital.com/blog/two-feds-on-reactjs-keeping-delphic-on-the-cutting-edge",
+            "date": "date"
+        },
+        {
+            "title": ".htaccess: a FED guide to redirects",
+            "description": "blah blah",
+            "url": "http://www.delphicdigital.com/blog/htaccess-a-fed-guide-to-redirects",
+            "date": "date"
+        },
+        {
+            "title": "CSS Layouts (part 3): The Future - Grids",
+            "description": "blah blah",
+            "url": "http://www.delphicdigital.com/blog/css-layout-techniques-part-3",
+            "date": "date"
+        },
+        {
+            "title": "CSS Layouts (part 2): The Present - Flexbox",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/css-layout-techniques-part-2",
+            "date": "date"
+        },
+        {
+            "title": "CSS Layouts (part 1): The Past - Everything else",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/css-layout-techniques-part-1",
+            "date": "date"
+        },
+        {
+            "title": "CSS in 3D",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/css-in-3d",
+            "date": "date"
+        },
+        {
+            "title": "Sass (part 2): tips and Tricks",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/sass-part-2-tips-and-tricks",
+            "date": "date"
+        },
+        {
+            "title": "Sass (part 1): Architecture",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/sass-part-1-architecture",
+            "date": "date"
+        },
+        {
+            "title": "Google Analytics for Front End Developers",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/analytics-js",
+            "date": "date"
+        },
+        {
+            "title": "Service Workers",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/service-workers",
+            "date": "date"
+        },
+        {
+            "title": " Chrom Dev tools",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/chrome-devtools",
+            "date": "date"
+        },
+        {
+            "title": "Git Commands cheat sheet",
+            "description": "blah blah",
+            "url": "http://delphicdigital.com/blog/git-commands-cheat-sheet",
+            "date": "date"
+        }
+    ]
+}   

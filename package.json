@@ -1,42 +1,13 @@
 {
-  "name": "mclu-phase1",
-  "version": "0.1.0",
-  "description": "",
+  "name": "ijmccallum",
+  "version": "0.2.0",
+  "description": "My Harp site!",
   "main": "index.js",
-  "dependencies": {
-    "jquery": "^3.1.1"
-  },
   "devDependencies": {
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "del": "^2.2.2",
-    "glob": "^7.1.1",
-    "handlebars": "^4.0.6",
-    "metalsmith": "^2.3.0",
-    "metalsmith-debug": "^1.1.0",
-    "metalsmith-in-place": "^1.4.4",
-    "metalsmith-layouts": "^1.7.0",
-    "metalsmith-register-helpers": "^0.2.0",
-    "node-notifier": "^4.6.1",
-    "node-sass": "^4.0.0",
-    "node-sass-glob-importer": "^3.0.0",
-    "npm-run-all": "^3.1.0",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^6.0.0",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-uglify": "^1.0.1",
-    "sane": "^1.4.1"
   },
   "scripts": {
-    "start": "run-p build server watch",
-    "build": "run-p build:*",
-    "build:html": "\"node build.js\"",
-    "build:sass": "node-sass src/scss -o ./dist --importer node_modules/node-sass-glob-importer/dist/cli.js --output-style compressed",
-    "build:js": "rollup -c",
-    "watch": "run-p watch:*",
-    "watch:html": "sane \"npm run build:html\" src/html --glob=**/*",
-    "watch:sass": "sane \"npm run build:sass\" src/scss --glob=**/*.scss",
-    "watch:js": "sane \"npm run build:js\" src/js --glob=**/*.js",
-    "server": "http-server -p 8082"
+    "start": "harp server ./ --port 3000",
+    "build": "harp compile ./ ./dist"
   },
   "author": "",
   "license": "ISC"
