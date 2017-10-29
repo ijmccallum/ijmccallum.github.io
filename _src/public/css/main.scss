@@ -1,0 +1,20 @@
+
+@import "abstracts/_breakpoints";
+@import "abstracts/_colors";
+@import "abstracts/_sizes";
+
+@import "base/__normalize";
+@import "base/_typography";
+
+@import "layouts/_main";
+@import "layouts/_columns";
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    line-height: 1.4;
+    // background-color: $black;
+    // color: $white;
+    background-color: $white;
+    color: $black;
+}
