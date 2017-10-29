@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "harp server ./ --port 3000",
-    "build": "harp compile ./ ./dist"
+    "build": "harp compile ./ ./docs"
   },
   "author": "",
   "license": "ISC"
