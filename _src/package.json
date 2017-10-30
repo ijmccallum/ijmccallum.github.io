@@ -1,0 +1,14 @@
+{
+  "name": "ijmccallum",
+  "version": "0.2.0",
+  "description": "My Harp site!",
+  "main": "index.js",
+  "devDependencies": {
+  },
+  "scripts": {
+    "start": "harp server . --port 3000",
+    "build": "harp compile . ../"
+  },
+  "author": "",
+  "license": "ISC"
+}

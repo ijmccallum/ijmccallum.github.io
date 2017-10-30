@@ -1,5 +1,3 @@
-
-
 #Code Bucket list
 
 ---
@@ -7,8 +5,7 @@
 ##Languages to work with in a production app:
 
  - [x] *JavaScript* 
- - [ ] *C#*
- - [ ] *Haskell*
+ - [ ] *C/C++*
  - [ ] *R*
 
 ---
@@ -21,11 +18,6 @@
  - JS: Javascript your Genome: http://genomejs.readme.io/docs/what-do-i-do - 1st get my genome sequenced, then do things with the data!
  - JS: text on the site is whitel, site bg is white. Except for a black dot in the middle with "HI" in it. Click the dot expands another dot of color inside, the black becomes the border.  The readius of the new dot depends on the length of click, but nothing happens until you let go. The color depends on the orientation of the mouse (leave this to be discovered). As the layers of color expand the white text / links of the site are revealed.
  - R: do a [Kaggle](https://www.kaggle.com/competitions) competition.
----
-layout: base.html
-title: Code Bucket List
----
-
 
 ---
 
@@ -57,3 +49,9 @@ printFib(1, 1);
 console.timeEnd('fib to infinity');
 ```
 Would be cool to implement this and send the results home somewhere to measure!
+
+Book to read for WL:
+
+probabilistic reasoning in intelligent systems networks of plausible inference
+
+causality models reasoning and inference
