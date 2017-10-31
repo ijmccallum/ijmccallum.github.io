@@ -1,0 +1,10 @@
+.flex-wrap-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+
+    &__cell {
+        max-width: 340px;
+    }
+}

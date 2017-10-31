@@ -8,19 +8,19 @@
         },
         {
             "title": "Dockerizing Wikilogic",
-            "description": "By this point the set up for WL was becoming quite a headache, not exactly inviting prospect to attract new developers! Also deployment was a nightmare. Now we're on docker - two birds with one stone! The article digs into the technical story of setting it up. Note that WL has evolved so the current set up is ifferent, but this should sitll be helpful for those wishing to learn.",
+            "description": "By this point the set up for WL was becoming quite a headache, not exactly inviting prospect to attract new developers! Also deployment was a nightmare. Now we're on docker - two birds with one stone! The article digs into the technical story of setting it up. Note that WL has evolved so the current set up is different, but this should still be helpful for those wishing to learn.",
             "url": "http://www.wikilogicfoundation.org/dockerizing-wikilogic/",
             "date": "June 2017"
         },
         {
             "title": ".htaccess: a FED guide to redirects",
-            "description": "This dive into apache came about to try and help alliviate a bottleneck in our pipeline at work. Server configuration is not exactly the most popular subject in the office.",
+            "description": "This dive into apache came about to try and help alleviate a bottleneck in our pipeline at work. Server configuration is not exactly the most popular subject in the office.",
             "url": "http://www.delphicdigital.com/blog/htaccess-a-fed-guide-to-redirects",
             "date": "March 2017"
         },
         {
             "title": "Redux: attempting a simple overview",
-            "description": "This was part of my pitch to use some kind of state managment for a complex product listing front end. The idea was turned down which at least gave me the experience of building complex state without a tool like Redux, I would be curious to know how much time we could have saved had we used it!",
+            "description": "This was part of my pitch to use some kind of state management for a complex product listing front end. The idea was turned down which at least gave me the experience of building complex state without a tool like Redux, I would be curious to know how much time we could have saved had we used it!",
             "url": "http://codepen.io/ijmccallum/post/redux",
             "date": "October 2016"
         },
@@ -32,7 +32,7 @@
         },
         {
             "title": "CSS Layouts (part 3): The Future - Grids",
-            "description": "CSS Grids and also the viewport units. These only started sneaking into our work towards the end of 2017, adn even then it's still experimental.",
+            "description": "CSS Grids and also the viewport units. These only started sneaking into our work towards the end of 2017, and even then it's still experimental.",
             "url": "http://www.delphicdigital.com/blog/css-layout-techniques-part-3",
             "date": "April 2016"
         },
@@ -50,13 +50,13 @@
         },
         {
             "title": "SVG 101: Setting Up",
-            "description": "Optimizing, embedding, and a dive into SVG's viewport / viewbox. Note that the date on the site is just a reflection of when this was published, it sat in the company 'todo' folder for a couple of years. Even made it through an aquisition and onto the new companie's blog! Fancy that!",
+            "description": "Optimizing, embedding, and a dive into SVG's viewport / viewbox. Note that the date on the site is just a reflection of when this was published, it sat in the company 'todo' folder for a couple of years. Even made it through an acquisition and onto the new company's blog! Fancy that!",
             "url": "http://herodigital.com/2017/10/03/svg-101-setting-up/",
             "date": "October 2015"
         },
         {
             "title": "Sass (part 2): tips and Tricks",
-            "description": "Essentially a miscillanious bucket for small sass tips, from those we use at work to those that were found while writing the previous article.",
+            "description": "Essentially a miscellaneous bucket for small sass tips, from those we use at work to those that were found while writing the previous article.",
             "url": "http://delphicdigital.com/blog/sass-part-2-tips-and-tricks",
             "date": "September  2015"
         },
@@ -85,8 +85,8 @@
             "date": "May 2015"
         },
         {
-            "title": "Chrom Dev tools",
-            "description": "I read through the docs, noted the important parts, condensed it, and put it down in writing. Note that the chrome dev tools team have been quite prolific - they have added a lot mroe since I wrote this!",
+            "title": "Chrome Dev tools",
+            "description": "I read through the docs, noted the important parts, condensed it, and put it down in writing. Note that the chrome dev tools team have been quite prolific - they have added a lot more since I wrote this!",
             "url": "http://delphicdigital.com/blog/chrome-devtools",
             "date": "May 2015"
         },
