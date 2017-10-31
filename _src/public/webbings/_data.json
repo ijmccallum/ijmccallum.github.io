@@ -38,7 +38,7 @@
         {
             "title": "Pa11y",
             "url": "http://pa11y.org/",
-            "description": "In my experience accessibility is like code style in that they're both treated a 2nd class concerns far too often. Work this into your build tools and have it yell a11y concerns at you - it's really worth it!"
+            "description": "In my experience accessibility is like code style in that they're both treated as 2nd class concerns far too often. Work this into your build tools and have it yell a11y concerns at you - it's really worth it!"
         },
         {
             "title": "display: table;",

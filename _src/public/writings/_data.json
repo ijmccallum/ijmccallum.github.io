@@ -8,7 +8,7 @@
         },
         {
             "title": "Dockerizing Wikilogic",
-            "description": "By this point the set up for WL was becoming quite a headache, not exactly inviting prospect to attract new developers! Also deployment was a nightmare. Now we're on docker - two birds with one stone! The article digs into the technical story of setting it up. Note that WL has evolved so the current set up is different, but this should still be helpful for those wishing to learn.",
+            "description": "By this point the set up for WL was becoming quite a headache, not exactly an inviting prospect to attract new developers with. Also deployment was a nightmare. Now we're on docker - two birds with one stone! The article digs into the technical story of setting it up. Note that WL has evolved so the current set up is different, but this should still be helpful for those wishing to learn.",
             "url": "http://www.wikilogicfoundation.org/dockerizing-wikilogic/",
             "date": "June 2017"
         },
