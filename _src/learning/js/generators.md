@@ -6,8 +6,7 @@
      yield 'what?';
      yield 'I said it\'s a function that returns multiple values';
      yield 'I SAID, "it is a function that returns multiple values"';
-     yield 'I SAID ITS A FUNCTION THAT RETURNS MUTLIPLE VALUES!';
-     return 'BAH!';
+     return 'I SAID ITS A FUNCTION THAT RETURNS MUTLIPLE VALUES!';
  }
  ```
 

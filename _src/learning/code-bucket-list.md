@@ -1,8 +1,8 @@
-#Code Bucket list
+# Code Bucket list
 
 ---
 
-##Languages to work with in a production app:
+## Languages to work with in a production app:
 
  - [x] *JavaScript* 
  - [ ] *C/C++*
@@ -10,7 +10,25 @@
 
 ---
 
-##Mini project ideas to make:
+## Article ideas / learning
+
+ - WL challenges
+	- SSL
+	- Docker
+	- CI with e2e testing / deployment
+	- Monitoring performance & errors
+ - Future Web Developments (Orders of magnitude changes)
+	- Design tools to markup & styles for all but the most complex of designs. Eg Sketch (it feels close). Essentialy autopilot for front end dev. Note that the same doesn't seem to have happened to server side systems, which is curious.
+ - Future Industries to segway into...
+	- ML
+	- Crisper? Bio tech
+ - JS
+	- Generators
+	- 
+
+---
+
+## Mini project ideas to make:
 
  - C#: ???
  - JS: Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
@@ -21,7 +39,7 @@
 
 ---
 
-##Big project ideas
+## Big project ideas
 
  - [ ] [WikiLogic](https://github.com/WikiLogic/WikiLogic): in progress!
  - [ ] Use [React](https://facebook.github.io/react/)? to build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
@@ -29,7 +47,7 @@
 
 ---
 
-##Tiny project ideas
+## Tiny project ideas
 
 How long does it take you to run fibonacci to infinity in your browser?
 ```javascript
