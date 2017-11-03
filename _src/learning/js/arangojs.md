@@ -1,36 +1,38 @@
 # Arangojs
 
-Reading through the sourcecode as we're using this for WL.
+_Reading through the sourcecode._
+
+The first thing you do with this is to call `new arangojs.Database(configurationOptions)`.
 
 ## index.js
 
- - Bring in the database
- - Bring in aql-query
- - export them both along with any args that are passed.
+This is `arangojs`. It exports the following: (sudo code)
+
+```
+    this: new Database(args), //so you can call new arangojs(args) 
+    Database: ./database.js, //as well as new arangojs.Database(args)
+    aqlQuery: ./aql-query.js,
+    aql: ./aql-query.js,
+```
+
+The args are the configurationObject you pass in, they go into the ./database.js constructor
 
 ## database.js
 
-Well this is a bit large. ~500 line file with a bunch of functions, starting off with a few imports:
+When calling `new Database(configurationOptions)` the database class constructor doesn't do much:
 
- - util/all.js
- - util/btoa.js
- - util/multipart.js (as toFrom?)
- - ./connection.js
- - ./cursor (as ArrayCursor)
- - ./graph
- - constructCollection, DocumentCollection, and EdgeCollection from ./collection
+```
+//sudo code for Database
+this._connection = new Connection(configurationOptions)
+```
 
-It exports the `Database` class which takes an object `config`, one huge list of functions. In the constructor for this class: `this._connection = new Connection(config)` So into ./connection.js we go
-
+Connection comes from ./connection.js so lets go straight through to there
 
 ## connection.js
 
-### connection configuration
-
-When you run `new Database(config)`, **config** is passed through the Database constructor into the Connection constructor. There's some spreading but this is what all the config object keys are by default:
+This exports a Connection class, the constructor for this class is where our `configurationOptions` are finally used. Any options we add to it will override a few defaults. This is what the defaults end up looking like (all of which you can override with `configurationOptions`:
 
 ```
-//all of these can be overridden by the config object you pass to new Database(config)
 config = {
   url: 'http://localhost:8529',
   databaseName: '_system',
@@ -49,9 +51,11 @@ config = {
 }
 ```
 
-Along with setting the configuration object overrides the constructor sets a few values on the class itself:
+Along with setting the default / overridden configuration the constructor sets a few values on the class itself:
 
-thisThings = {
+```
+//again sudo code ish
+Connection = {
     arangoMajor: 3, //floor arangoVersion / 10000,
     _baseUrl: //
     _request:
@@ -64,3 +68,4 @@ thisThings = {
         randomize: true
     }
 }
+```
