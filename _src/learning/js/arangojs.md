@@ -2,9 +2,13 @@
 
 _Reading through the sourcecode. This is only half the story. Open the arangojs repo alongside this chunk of writing and read through them together. Assuming they haven't fallen out of sync._
 
+---
+
+## `new arangojs.Database(configurationOptions)`
+
 The first thing you do with this is to call `new arangojs.Database(configurationOptions)`.
 
-## index.js (this is `arangojs`)
+**index.js** (this is `arangojs`)
 
 ```
 import Database from './database'
@@ -15,7 +19,8 @@ module.exports.Database = Database //this is the line that's of interest. So we 
 module.exports.aqlQuery =
 module.exports.aql = aqlQuery
 ```
-## database.js
+
+**database.js**
 
 These are the lines from database.js that get called (I've removed other stuff that doesn't run initially:
 
@@ -27,7 +32,7 @@ export default class Database {
     this._connection = new Connection(config) //again we jump into a new file
 ```
 
-## connection.js
+**connection.js**
 
 ```
 export default class Connection {
@@ -70,13 +75,13 @@ ConnectionValues = {
 }
 ```
 
-### ./util/request.js as createRequest
+**./util/request.js as createRequest**
 
 ```
 module.exports = require('./request.node') //into ./request.node.js we go!
 ```
 
-### ./request.node.js
+**./request.node.js**
 
 ```
 export default function (baseUrl, agentOptions, agent) {
@@ -112,9 +117,10 @@ return {
 }
 ```
 
-##Summary of `new arangojs.Database(configurationOptions)`
+**Summary of `new arangojs.Database(configurationOptions)`**
 
 Nothing is actually run. No http requests have happened. No db calls have been made. We just have an object that is ready to be used.
 
 ---
 
+##
