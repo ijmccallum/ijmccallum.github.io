@@ -4,7 +4,7 @@ _Reading through the sourcecode. This is only half the story. Open the arangojs 
 
 ---
 
-## `new arangojs.Database(configurationOptions)`
+## `const DB = new arangojs.Database(configurationOptions)`
 
 The first thing you do with this is to call `new arangojs.Database(configurationOptions)`.
 
@@ -117,10 +117,64 @@ return {
 }
 ```
 
+**database.js**
+
+We have now concluded the creation of the connection class, the first line in the Database class constructor. Now we move onto the second.
+
+```
+export default class Database {
+  constructor (config) {
+    this._connection = new Connection(config)
+    this._api = this._connection.route('/_api') //back into the connection class we go!
+```
+
+**connection.js**
+
+This time we're here for the `route` function.
+
+```
+import Route from './route' //off to ./route we go
+
+route (path, headers) {
+    //path is './_api'
+    //headers is undefined
+    //this is the connection class we've just gone through creating
+    return new Route(this, path, headers)
+}
+```
+
+**route.js**
+
+```
+export default class Route {
+    //connection is the connection class we're created
+    //path is './_api'
+    //headers is undefined
+  constructor (connection, path, headers) {
+    //each of these are just applied as this._<key>
+```
+
+During this instantiation nothing much happened in there. The DB now has a ._api with all the functions in that route class available to it. We'll get to those eventually no doubt.
+
+**database.js**
+
+The final line in the constructor. Just applying a variable as the db name.
+
+```
+export default class Database {
+  constructor (config) {
+    this._connection = new Connection(config)
+    this._api = this._connection.route('/_api')
+    this.name = this._connection.config.databaseName
+  }
+```
+
 **Summary of `new arangojs.Database(configurationOptions)`**
 
 Nothing is actually run. No http requests have happened. No db calls have been made. We just have an object that is ready to be used.
 
 ---
 
-##
+## `DB.createDatabase('mydb');`
+
+Assuming you're starting from scratch and your code cannot guarentee that a db has been set up this is probably the next function you're going to run.
