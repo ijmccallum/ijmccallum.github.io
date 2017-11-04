@@ -178,3 +178,43 @@ Nothing is actually run. No http requests have happened. No db calls have been m
 ## `DB.createDatabase('mydb');`
 
 Assuming you're starting from scratch and your code cannot guarentee that a db has been set up this is probably the next function you're going to run.
+
+```
+export default class Database {
+    createDatabase (databaseName, users, cb) {
+        //the cb is promisified. This just seems to be for legacy
+```
+
+There's a little prepping of the parameters then everything is passed to `this._api.post` which is a reference to `this._connection.route('/_api').post` so we follow that into the connection class again!
+
+**connection.js**
+
+looking for `route('/_api').post` we find the `return new Route(this, path, headers)` thing again (it has already been instantiated). So following into './route.js'
+
+**route.js**
+
+Here we find `post (path, body, qs, headers, callback) {`! So to get the context set up again:
+
+1. Database constructor ran `this._api = this._connection.route('/_api')` which created a new Route class referenced by `DB._api`. The route class constructor just set _connection as the Connection class and _path as the path.
+
+2. `DB.createDatabase('mydb');` ran:
+
+```
+this._api.post(
+    '/database',
+    {users, name: databaseName},
+    (err, res) => err ? callback(err) : callback(null, res.body)
+)
+```
+
+So now inside the Route class, the `post` function configures a kind of settings object then returns `_connection.request` with those settings passed into it. Now we have to look to the Connection class's request key again.
+
+**connection.js**
+
+The `request` function does a bunch more option configuring, sets up some request headers. Builds a url out of the options. Grabs the request object that was created during instantiation of the connection class which is fired and the results are dealt with. So we need to di into that request function.
+
+**request.node.js**
+
+Takes all the options. Makes an http request using the node http or https module. Looks like data is returned in chunks which is pushes into a `data` array. When that finishes: `res.body = Buffer.concat(data)` then fires the callback with res which will trigger the promosified bit earlier to resolve.
+
+This feels a little over complicated. It does appear that the goal of all this is to create a correctly formatted http request.
