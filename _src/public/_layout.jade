@@ -7,10 +7,10 @@ html
     link(rel="stylesheet" type="text/css" href="css/main.css")
     link(href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet")
     link(rel="manifest" href="manifest.json")
-    script(src="/javascripts/jquery.js")
-    script(src="/javascripts/app.js")
+    
   body.pad
       != yield
+
     #footer
       .margin-bottom
         a.margin-right(href="https://github.com/ijmccallum") GitHub
@@ -18,3 +18,5 @@ html
         a.margin-right(href="https://www.linkedin.com/in/iainjmccallum") Linkedin
         a.margin-right(href="ttps://twitter.com/IJMcCallum") Twitter
       p What's that weird thing in the tab of your site? It's a question. Or an invitation. Either way it's aimed at you.
+
+    script(src="/js/main.js")
