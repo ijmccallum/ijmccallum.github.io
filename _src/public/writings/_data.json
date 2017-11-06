@@ -49,6 +49,12 @@
             "date": "February 2016"
         },
         {
+            "title": "SVG 101: Anatomy",
+            "description": "Going through all the basics of SVG land.",
+            "url": "http://herodigital.com/2017/11/06/svg-101-anatomy/",
+            "date": "October 2015"
+        },
+        {
             "title": "SVG 101: Setting Up",
             "description": "Optimizing, embedding, and a dive into SVG's viewport / viewbox. Note that the date on the site is just a reflection of when this was published, it sat in the company 'todo' folder for a couple of years. Even made it through an acquisition and onto the new company's blog! Fancy that!",
             "url": "http://herodigital.com/2017/10/03/svg-101-setting-up/",

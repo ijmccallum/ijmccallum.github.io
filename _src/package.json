@@ -3,11 +3,11 @@
   "version": "0.2.0",
   "description": "My Harp site!",
   "main": "index.js",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "harp server . --port 3000",
-    "build": "harp compile . ../"
+    "build": "harp compile . ../",
+    "test": "pwmetrics --submit --config=pwmetrics-config.js"
   },
   "author": "",
   "license": "ISC"
