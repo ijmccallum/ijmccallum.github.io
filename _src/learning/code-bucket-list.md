@@ -42,6 +42,7 @@
 ## Big project ideas
 
  - [ ] [WikiLogic](https://github.com/WikiLogic/WikiLogic): in progress!
+ - [ ] Build some kind of map / plan thing with [WRLD](https://www.wrld3d.com/) here's a [tutorial](https://www.sitepoint.com/building-dynamic-3d-maps/). To link in with Westport & Co possibly.
  - [ ] Use [React](https://facebook.github.io/react/)? to build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
  - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means... built on [Electron](http://electron.atom.io/) 
 
