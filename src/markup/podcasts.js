@@ -3,7 +3,7 @@ var podcasts = require('./podcasts.json');
 module.exports = function(){
 
     let podcastsMarkup = '';
-    podcasts.finds.forEach(function(podcast) {
+    podcasts.casts.forEach(function(podcast) {
         podcastsMarkup += html`
             <div class="margin-bottom flex-wrap-grid__cell">
                 <a href="${podcast.url}">

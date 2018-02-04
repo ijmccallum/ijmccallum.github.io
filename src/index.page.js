@@ -1,5 +1,5 @@
 const writings = require('./markup/writing.js');
-const webbings = require('./markup/webbings.js');
+const webbings = require('./markup/webbing.js');
 const podcasts = require('./markup/podcasts.js');
 
 module.exports = function(){
