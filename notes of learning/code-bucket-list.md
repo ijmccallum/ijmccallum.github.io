@@ -75,3 +75,7 @@ Book to read for WL:
 probabilistic reasoning in intelligent systems networks of plausible inference
 
 causality models reasoning and inference
+
+Distributes systems stuff:
+Kubernetes
+helm (distributed systems package manager)
