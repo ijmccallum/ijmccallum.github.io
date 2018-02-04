@@ -7,11 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "msg -io ./src/ ./",
+    "build": "npm run build:markup && npm run build:css",
+    "build:markup": "msg -io ./src/ ./",
     "build:css": "npm run sass && npm run autoprefixer && npm run cssnano",
     "sass": "node-sass --output-style compressed ./src/scss/main.scss ./css/main.css",
-    "autoprefixer": "postcss -u autoprefixer -r css/**/*.css --map false",
-    "cssnano": "postcss -u cssnano -r css/**/*.css",
+    "autoprefixer": "postcss -u autoprefixer -r css/**/*.css --no-map",
+    "cssnano": "postcss -u cssnano -r css/**/*.css --no-map",
     "postbuild": "node pa11y.js"
   },
   "repository": {
