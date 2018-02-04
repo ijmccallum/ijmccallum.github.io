@@ -1,0 +1,25 @@
+{
+  "name": "ijmccallum.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "msg -io ./src/ ./docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijmccallum/ijmccallum.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ijmccallum/ijmccallum.github.io/issues"
+  },
+  "homepage": "https://github.com/ijmccallum/ijmccallum.github.io#readme",
+  "devDependencies": {
+    "mini-site-generator": "^1.0.8"
+  }
+}
