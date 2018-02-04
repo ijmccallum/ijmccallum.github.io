@@ -53,6 +53,7 @@ module.exports = function(){
                     </div>
                     <p>What's that weird thing in the tab of your site? It's a question. Or an invitation. Either way it's aimed at you.</p>
                 </div>
+                <script src="/js/main.js" async defer></script>
             </body>
         </html>
     `;
