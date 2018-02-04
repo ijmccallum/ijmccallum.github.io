@@ -19,9 +19,9 @@ module.exports = function(){
                 <link rel="manifest" href="manifest.json">
             </head>
             <body class="pad">
-                <div class="margin-bottom">
+                <header class="margin-bottom">
                     <h1>Iain J McCallum</h1>
-                </div>
+                </header>
 
                 <div class="margin-bottom">
                     <h2>Work</h2>

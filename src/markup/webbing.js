@@ -5,12 +5,12 @@ module.exports = function(){
     let webbingsMarkup = '';
     webbings.finds.forEach(function(web) {
         webbingsMarkup += html`
-            <div class="margin-bottom">
-                <a href="${web.url}">
-                    <h3>${web.title}</h3>
-                </a>
+            <article class="margin-bottom">
+                <header>
+                    <h3><a href="${web.url}">${web.title}</a></h3>
+                </header>
                 <p>${web.description}</p>
-            </div>
+            </article>
         `;
     });
 

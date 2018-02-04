@@ -5,12 +5,12 @@ module.exports = function(){
     let podcastsMarkup = '';
     podcasts.casts.forEach(function(podcast) {
         podcastsMarkup += html`
-            <div class="margin-bottom flex-wrap-grid__cell">
-                <a href="${podcast.url}">
-                    <h3>${podcast.title}</h3>
-                </a>
+            <article class="margin-bottom flex-wrap-grid__cell">
+                <header>
+                    <h3><a href="${podcast.url}">${podcast.title}</a></h3>
+                </header>
                 <p>${podcast.description}</p>
-            </div>
+            </article>
         `;
     });
 

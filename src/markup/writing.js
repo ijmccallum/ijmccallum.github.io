@@ -5,12 +5,12 @@ module.exports = function(){
     let writingsMarkup = '';
     writings.articles.forEach(function(write) {
         writingsMarkup += html`
-            <div class="margin-bottom">
-                <a href="${write.url}">
-                    <h3>${write.title}</h3>
-                </a>
+            <article class="margin-bottom">
+                <header>
+                    <h3><a href="${write.url}">${write.title}</a></h3>
+                </header>
                 <p>${write.description}</p>
-            </div>
+            </article>
         `;
     });
     
