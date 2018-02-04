@@ -3,6 +3,10 @@ const webbings = require('./markup/webbing.js');
 const podcasts = require('./markup/podcasts.js');
 
 module.exports = function(){
+    const writingMarkup = writings();
+    const webbingMarkup = webbings();
+    const podcastingMarkup = podcasts();
+    
     return html`
         <!DOCTYPE html>
         <html>
@@ -27,16 +31,16 @@ module.exports = function(){
                     
                 <div class="margin-bottom columns">
                     <div class="columns__col">
-                        ${writings()}
+                        ${writingMarkup}
                     </div>
                     <div class="columns__col-gap"></div>
                     <div class="columns__col">
-                        ${webbings()}
+                        ${webbingMarkup}
                     </div>
                 </div>
                 <div class="margin-bottom columns">
                     <div class="columns__col">
-                        ${podcasts()}
+                        ${podcastingMarkup}
                     </div>
                 </div>
 
