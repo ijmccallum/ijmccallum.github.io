@@ -83,6 +83,8 @@ causality models reasoning and inference
 
 Distributes systems stuff:
 Kubernetes
+ - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
+ - [ ] module 2: https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-intro/
 helm (distributed systems package manager)
 
 https://codeburst.io/how-i-created-a-heatmap-of-my-location-history-with-javascript-google-maps-972a2d1be240
