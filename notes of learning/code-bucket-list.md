@@ -11,6 +11,10 @@
 ---
 
 ## Article ideas / learning
+ - Reading list
+ 	- https://github.com/Developer-Y/Scalable-Software-Architecture
+	- https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf
+	- http://aosabook.org/en/index.html
 
  - WL challenges
 	- SSL
