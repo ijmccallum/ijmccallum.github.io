@@ -4,23 +4,10 @@
 
 ## Languages to work with in a production app:
 
- - [x] *JavaScript* 
- - [ ] *Go*
- - [ ] *C/C++*
-
-
----
-
-## Reading list
-
-- [ ] https://github.com/Developer-Y/Scalable-Software-Architecture
-- [ ] http://aosabook.org/en/index.html
-- [ ] https://github.com/mojoaxel/awesome-regression-testing#online-services
-
-- [ ] probabilistic reasoning in intelligent systems networks of plausible inference
-- [ ] causality models reasoning and inference
-- [x] https://engineering.instagram.com/search-architecture-eeb34a936d3a Quick overview of instagrams search process -mentiones a few technologies but they seem facebook specific.
-- [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is useing Node at. Node marketing!
+ - [x] JavaScript *Love it! Bread and butter.*
+ - [x] PHP *Not really a big fan of this one, didn't really click.*
+ - [ ] Go
+ - [ ] C/C++
 
 ---
 
@@ -41,7 +28,7 @@
 
 ---
 
-## Tools:
+## Tools to learn:
 
 Kubernetes
  - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
@@ -60,3 +47,15 @@ Angular n.n
  - [ ] MDN
  - [ ] Node
  - [ ] Go
+ 
+ 
+## Reading list
+
+- [ ] https://github.com/Developer-Y/Scalable-Software-Architecture
+- [ ] http://aosabook.org/en/index.html
+- [ ] https://github.com/mojoaxel/awesome-regression-testing#online-services
+
+- [ ] probabilistic reasoning in intelligent systems networks of plausible inference
+- [ ] causality models reasoning and inference
+- [x] https://engineering.instagram.com/search-architecture-eeb34a936d3a Quick overview of instagrams search process -mentiones a few technologies but they seem facebook specific.
+- [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is useing Node at. Node marketing!
