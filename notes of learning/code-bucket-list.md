@@ -26,6 +26,7 @@
 
 ## Project Ideas:
 
+ - [x] Make a [Static site generator](https://www.npmjs.com/package/mini-site-generator) just using js template strings.
  - Whisky Tracker: point tracking - one on one ...
  - Task wars / market: pay 'money' to assign tasks - more for a higher priority / ahead in the queue. Price adjusts depending on individual queues.
  - Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
@@ -36,6 +37,7 @@
  - [ ] Build some kind of map / plan thing with [WRLD](https://www.wrld3d.com/) here's a [tutorial](https://www.sitepoint.com/building-dynamic-3d-maps/). To link in with Westport & Co possibly.
  - [ ] Build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
  - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means... built on [Electron](http://electron.atom.io/) 
+ - [ ]
 
 ---
 
