@@ -48,3 +48,11 @@ Kubernetes
 Vue
 
 Angular n.n
+
+---
+
+## 30 Day Challenges 
+
+ - [ ] MDN
+ - [ ] Node
+ - [ ] Go
