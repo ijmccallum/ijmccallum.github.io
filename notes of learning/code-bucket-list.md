@@ -24,10 +24,10 @@
 ## Tools to learn:
 
  - [ ] Kubernetes
-  - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
-  - [x] module 2: https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-intro/
-  - [ ] module 3: https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/
-  - [ ] helm (distributed systems package manager)
+     - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
+     - [x] module 2: https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-intro/
+     - [ ] module 3: https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/
+     - [ ] helm (distributed systems package manager)
  - [ ] Vue
  - [ ] Angular n.n
 
