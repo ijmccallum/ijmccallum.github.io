@@ -5,36 +5,25 @@
 ## Languages to work with in a production app:
 
  - [x] *JavaScript* 
+ - [ ] *Go*
  - [ ] *C/C++*
- - [ ] *R*
+
 
 ---
 
 ## Article ideas / learning
  - Reading list
- 	- https://github.com/Developer-Y/Scalable-Software-Architecture
-	- https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf
-	- http://aosabook.org/en/index.html
-	- https://github.com/mojoaxel/awesome-regression-testing#online-services
-
- - WL challenges
-	- SSL
-	- Docker
-	- CI with e2e testing / deployment
-	- Monitoring performance & errors
- - Future Web Developments (Orders of magnitude changes)
-	- Design tools to markup & styles for all but the most complex of designs. Eg Sketch (it feels close). Essentialy autopilot for front end dev. Note that the same doesn't seem to have happened to server side systems, which is curious.
- - Future Industries to segway into...
-	- ML
-	- Crisper? Bio tech
- - JS
-	- Generators
-	- 
+ 	- [ ] https://github.com/Developer-Y/Scalable-Software-Architecture
+	- [ ] http://aosabook.org/en/index.html
+	- [ ] https://github.com/mojoaxel/awesome-regression-testing#online-services
+	- [ ] https://engineering.instagram.com/search-architecture-eeb34a936d3a
+ 	- [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is useing Node at. Node marketing!
 
 ---
 
 ## Mini project ideas to make:
 
+ - Whisky Tracker: point tracking - one on one ...
  - C#: ???
  - JS: Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
  - [Console Madness](https://github.com/ijmccallum/consoleMadness): makes it look like you are doing something phenominal but you're just typing randomly
@@ -88,3 +77,4 @@ Kubernetes
 helm (distributed systems package manager)
 
 https://codeburst.io/how-i-created-a-heatmap-of-my-location-history-with-javascript-google-maps-972a2d1be240
+
