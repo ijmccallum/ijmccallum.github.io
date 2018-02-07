@@ -1,15 +1,11 @@
 # Code Bucket list
 
----
-
 ## Languages to work with in a production app:
 
  - [x] JavaScript *Love it! Bread and butter.*
  - [x] PHP *Not really a big fan of this one, didn't really click.*
  - [ ] Go
  - [ ] C/C++
-
----
 
 ## Project Ideas:
 
@@ -25,21 +21,15 @@
  - [ ] Build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
  - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means... built on [Electron](http://electron.atom.io/) 
 
----
-
 ## Tools to learn:
 
-Kubernetes
- - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
- - [x] module 2: https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-intro/
- - [ ] module 3: https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/
- - [ ] helm (distributed systems package manager)
-
-Vue
-
-Angular n.n
-
----
+ - [ ] Kubernetes
+  - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
+  - [x] module 2: https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-intro/
+  - [ ] module 3: https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/
+  - [ ] helm (distributed systems package manager)
+ - [ ] Vue
+ - [ ] Angular n.n
 
 ## 30 Day Challenges 
 
