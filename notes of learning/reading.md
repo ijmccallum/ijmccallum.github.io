@@ -11,9 +11,10 @@
 
 In depth overviews / critiques of the system designs behind some great open source projects.
 
- - Vol 1
-    - [x] [asterisk](http://aosabook.org/en/asterisk.html) Multi format, extensible phone server - details in C but the overview is good!
-    - [ ]
+### [asterisk](http://aosabook.org/en/asterisk.html) 
+
+A Multi format, extensible phone server. Allows communication between many phone technologies (VoIP, Old school, and more I'm sure). Also allows 'dialplans' - applications whos UI is essentially your phone call. Automated answering giving you options in a phone menu, I'm guessing robo calls too. Where ever tech you're phoning from, it connects to Asterisk, the connection is translated into a generic format then into the core it goes. There live the applications or the generic end point of the line you're trying to connect to. Loads more details in the article - details in C but the overview is good!
+
 
 ## Articles
 
