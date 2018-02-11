@@ -111,18 +111,21 @@ module.exports = function(){
                     /* copy email on click */
                     let copyEl = document.getElementById('scremail');
 
-                    copyEl.onclick = function() {
-                        copyEl.className = "scremail";
-                        document.execCommand("copy");
-                        copyEl.textContent = "Copied to clipboard";
+                    function copier(){
+                        copyEl.className = 'scremail';
+                        document.execCommand('copy');
+                        copyEl.textContent = 'Copied to clipboard';
                     }
 
-                    copyEl.addEventListener("copy", function(event) {
+                    copyEl.addEventListener('onclick', copier);
+                    copyEl.addEventListener('touchstart', copier);
+
+                    copyEl.addEventListener('copy', function(event) {
                         event.preventDefault();
                         if (event.clipboardData) {
-                            event.clipboardData.setData("text/plain", copyEl.textContent);
-                            copyEl.className = "scremail flash";
-                            console.log(event.clipboardData.getData("text"))
+                            event.clipboardData.setData('text/plain', copyEl.textContent);
+                            copyEl.className = 'scremail flash';
+                            console.log(event.clipboardData.getData('text'));
                         }
                     });
                 })();
