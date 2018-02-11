@@ -1,10 +1,12 @@
 const fs = require('fs');
+const projects = require('./markup/projects.js');
 const writings = require('./markup/writing.js');
 const webbings = require('./markup/webbing.js');
 const podcasts = require('./markup/podcasts.js');
 
 module.exports = function(){
     var criticalcss = fs.readFileSync('./css/main.css','utf8'); //relative to the root I guesss
+    const projectMarkup = projects();
     const writingMarkup = writings();
     const webbingMarkup = webbings();
     const podcastingMarkup = podcasts();
@@ -36,12 +38,19 @@ module.exports = function(){
                         <a class="margin-right" href="ttps://twitter.com/IJMcCallum" target="_blank">Twitter</a>
                     </div>
                 </header>
-                
-                <div class="margin-bottom">
-                    <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Hero Digital</a>.
-                    I work with performance, accessibility, and everything JavaScript.</p>
-                    <p>To get in contact with me: <span id="scremail" class="scremail" title="click to copy">holdonforasec@dont.yet</span> or try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
+                <div class="grid">
+                    <div class="margin-bottom span-2">
+                        <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Hero Digital</a>.
+                        I work with performance, accessibility, and everything JavaScript.</p>
+                        <p>To get in contact with me: <span id="scremail" class="scremail" title="click to copy">holdonforasec@dont.yet</span> or try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
+                    </div>
                 </div>
+
+                <hr>
+
+                ${projectMarkup}
+
+                <hr>
                     
                 ${writingMarkup}
 
@@ -53,10 +62,10 @@ module.exports = function(){
                 
                 ${podcastingMarkup}
 
-                <div class="padder"></div>
-                
+                <hr>
+
                 <div id="footer">
-                    <p>What's that weird thing in the tab of your site? It's a question. Or an invitation. Either way it's aimed at you.</p>
+                    <p>Thanks for stopping by!</p>
                 </div>
 
                 <script>

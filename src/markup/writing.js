@@ -18,7 +18,7 @@ module.exports = function(){
         <div class="margin-bottom grid">
             <div>
                 <h2>Writing</h2>
-                <p>The best way to learn a new thing, for me, is to grok the docs and summarise it all in a blog post.</p>
+                <p>One of the best way to learn, for me, is to grok the docs of a project and summarise it in a blog post.</p>
             </div>
         </div>
         <div class="grid">

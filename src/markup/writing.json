@@ -50,7 +50,7 @@
         },
         {
             "title": "SVG 101: Anatomy",
-            "description": "Going through all the basics of SVG land.",
+            "description": "In a previous life I knew SVG through illustration. Now, as a developer, I wanted to know the details - to dive into the guts of the thing. This is a fairly throrugh post on the basic element types that make up an SVG.",
             "url": "http://herodigital.com/2017/11/06/svg-101-anatomy/",
             "date": "October 2015"
         },
