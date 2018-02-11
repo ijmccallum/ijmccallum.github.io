@@ -23,7 +23,7 @@ module.exports = function(){
                     ${criticalcss}
                 </style>
             </head>
-            <body class="padding">
+            <body>
                 <header class="margin-bottom columns">
                     <div class="columns__col">
                         <h1>Iain J McCallum</h1>
@@ -40,24 +40,23 @@ module.exports = function(){
                 <div class="margin-bottom">
                     <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Hero Digital</a>.
                     I work with performance, accessibility, and everything JavaScript.</p>
-                    <p>To get in contact with me: <span id="scremail" class="scremail">holdonforasec@dont.yet</span> or try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
+                    <p>To get in contact with me: <span id="scremail" class="scremail" title="click to copy">holdonforasec@dont.yet</span> or try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
                 </div>
                     
-                <div class="margin-bottom">
-                    ${writingMarkup}
-                </dic>
-                
-                <div class="margin-bottom">
-                    ${webbingMarkup}
-                </div>
+                ${writingMarkup}
 
-                <div class="margin-bottom">
-                    ${podcastingMarkup}
-                </div>
+                <hr>
+                
+                ${webbingMarkup}
+                
+                <hr>
+                
+                ${podcastingMarkup}
 
                 <div id="footer">
                     <p>What's that weird thing in the tab of your site? It's a question. Or an invitation. Either way it's aimed at you.</p>
                 </div>
+
                 <script>
                 console.log("%cOh hello there, what are you up to? \\nNothing much to see I'm afraid. \\nJust keeping it simple. \\nIf you're looking to see what my JS writings are like, \\nI would recommend https://github.com/WikiLogic. \\nIt's really rather good! \\nThank you for popping in though, \\nit's been a pleasure!", "color: #222; font-family: 'Crimson Text',serif; font-size: 19px; line-height: 1.4;");
                 var e = {

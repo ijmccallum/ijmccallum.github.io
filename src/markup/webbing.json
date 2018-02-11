@@ -1,11 +1,6 @@
 {
     "finds": [
         {
-            "title": "Harp",
-            "url": "http://harpjs.com/",
-            "description": "Static site generator with a collection of front end build tools built in (and server if you want it). This site is built with Harp! All that's missing from my static site knowledge is a good admin technology for non tech users. Once that's figured out there are going to be some phenomenal speed gains around this internet."
-        },
-        {
             "title": "Docker",
             "url": "https://www.docker.com/",
             "description": "I'm on a constant campaign to get everyone I work with onto Docker, don't throw away time by making people manually set up complex projects - Dockerize it! Although caveat, I've found front end build tools are more easily managed on your host system, especially when you're the one setting those build systems up."
@@ -14,6 +9,11 @@
             "title": "Let's Encrypt",
             "url": "https://letsencrypt.org/",
             "description": "SSL (HTTPS) certs aren't hard and they don't cost money (unless you want a fancy one) - so there's no excuse, HTTPS all your sites!"
+        },
+        {
+            "title": "Pa11y",
+            "url": "http://pa11y.org/",
+            "description": "In my experience accessibility is like code style in that they're both treated as 2nd class concerns far too often. Work this into your build tools and have it yell a11y concerns at you - it's really worth it!"
         },
         {
             "title": "Markdown",
@@ -34,16 +34,6 @@
             "title": "Sass Lint",
             "url": "https://github.com/sasstools/sass-lint",
             "description": "Because linting is always a good thing."
-        },
-        {
-            "title": "Pa11y",
-            "url": "http://pa11y.org/",
-            "description": "In my experience accessibility is like code style in that they're both treated as 2nd class concerns far too often. Work this into your build tools and have it yell a11y concerns at you - it's really worth it!"
-        },
-        {
-            "title": "display: table;",
-            "url": "https://www.google.com/search?q=css+display+table",
-            "description": "I don't know why it seems so many developers are still against this. It's very good. Combine it with `table-layout: fixed;` and it's pretty much magic. So I'm adding it here in support. I like `display: table;`"
         }
     ]
 }

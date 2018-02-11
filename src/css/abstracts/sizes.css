@@ -3,6 +3,7 @@
     --pad: 30px;
 }
 .padding { padding: var(--pad); }
+.padding-top { padding-top: var(--pad); }
 .margin-bottom { margin-bottom: var(--pad); }
 .margin-right { margin-right: var(--pad); }
 .margin-left { margin-left: var(--pad); }

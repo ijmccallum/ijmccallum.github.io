@@ -15,9 +15,11 @@ module.exports = function(){
     });
 
     return html`
-        <div class="margin-bottom">
-            <h2>Podcasts</h2>
-            <p>These things have become such a big part of my dev learning, they had to have their own section. There are non dev podcasts in my feed too but to list them would reveal the extent of my podcast addiction and I can't be having that! It seems like a lot when listed out like this, but that 2x button really makes them fly :)</p>
+        <div class="margin-bottom grid">
+            <div>
+                <h2>Podcasts</h2>
+                <p>This is my way of keeping up with the industry. Most are Front End Dev related, others are more general.</p>
+            </div>
         </div>
         <div class="grid">
             ${podcastsMarkup}
