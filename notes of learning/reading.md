@@ -11,11 +11,15 @@
 
 In depth overviews / critiques of the system designs behind some great open source projects.
 
-### Asterisk <small>[AOSA chapter](http://aosabook.org/en/asterisk.html), [asterisk.org](https://www.asterisk.org/), [Github repo](https://github.com/asterisk/asterisk).</small>
+### [Asterisk](https://www.asterisk.org/)
+
+[Github](https://github.com/asterisk/asterisk).
 
 A Multi format, extensible phone server. Allows communication between many phone technologies (VoIP, Old school, and more I'm sure). Also allows 'dialplans' - applications whos UI is essentially your phone call. EG automated answering giving you options in a phone menu, I'm guessing robo calls too. An incoming phone call is recieved by Asterisk, the type of tech is checked and a module for translating the tech specicif connection into a generic connection is assigned. The newly translated generic connection is then hooked up to an `ast_channel` - an object that will run the dialplan within Asterisk. That dialplan could be a phone menu or it could request a connection to another phone (which would run another connection but from generic to tech specific). If the outbound call tech matches the in bound, a direct connection may be initiated to save on translation into and out of the generic channel type. Loads more details in the article - examless in C but the overview is good!
 
-### Audacity 
+### [Audacity](https://www.audacityteam.org/)
+
+[Github](https://github.com/audacity/audacity)
 
 Sound recording and editing software. The architecture is described as "like a city", there are some impressive buildings, and some less impressive buildings. It is hindered by licencing issues but gets around these by supporing standard APIs - so said licenced code may be plugged in by a user. Thinking in layers, the base is 3rd party cross platform libs that expose general audio (PortAudio) and GUI (wxWidgets) APIs. These are in seperate DLL files (rather than being compiled into the core file). Size and speed suffer for this, but it allows other DLLs to use them directly at run time - greater extensability. 
 
