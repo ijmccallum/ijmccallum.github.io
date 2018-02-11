@@ -28,11 +28,12 @@ module.exports = function(){
                     <div class="columns__col">
                         <h1>Iain J McCallum</h1>
                     </div>
+                    <div class="columns__col-gap"></div>
                     <div class="columns__col">
-                        <a class="margin-left" href="https://github.com/ijmccallum" target="_blank">GitHub</a>
-                        <a class="margin-left" href="http://codepen.io/ijmccallum/" target="_blank">CodePen</a>
-                        <a class="margin-left" href="https://www.linkedin.com/in/iainjmccallum" target="_blank">Linkedin</a>
-                        <a class="margin-left" href="ttps://twitter.com/IJMcCallum" target="_blank">Twitter</a>
+                        <a class="margin-right" href="https://github.com/ijmccallum" target="_blank">GitHub</a>
+                        <a class="margin-right" href="http://codepen.io/ijmccallum/" target="_blank">CodePen</a>
+                        <a class="margin-right" href="https://www.linkedin.com/in/iainjmccallum" target="_blank">Linkedin</a>
+                        <a class="margin-right" href="ttps://twitter.com/IJMcCallum" target="_blank">Twitter</a>
                     </div>
                 </header>
                 
@@ -59,19 +60,18 @@ module.exports = function(){
                 </div>
                 <script>
                 console.log("%cOh hello there, what are you up to? \\nNothing much to see I'm afraid. \\nJust keeping it simple. \\nIf you're looking to see what my JS writings are like, \\nI would recommend https://github.com/WikiLogic. \\nIt's really rather good! \\nThank you for popping in though, \\nit's been a pleasure!", "color: #222; font-family: 'Crimson Text',serif; font-size: 19px; line-height: 1.4;");
+                var e = {
+                    n: 'iainjmccallum',
+                    s: 'gmail',
+                    d: 'com'
+                };
                 /* email scrambler! */
-                (function(){
-                    let scremEl = document.getElementById('scremail');
-                    let scrambleSteps = 10, scrambleStepCounter = 0;
-                    let e = {
-                        n: 'iainjmccallum',
-                        s: 'gmail',
-                        d: 'com'
-                    };
+                function scremailer(scremEl){
+                    var scrambleSteps = 20, scrambleStepCounter = 0;
 
                     function rndString(ln) {
-                        let rtn = '';
-                        let choices = 'abcdefghijklmnopqrstuvwxyz';
+                        var rtn = '';
+                        var choices = 'abcdefghijklmnopqrstuvwxyz';
                         for (var c = 0; c < ln; c++) {
                             rtn += choices[Math.floor(Math.random() * choices.length)];
                         }
@@ -98,34 +98,45 @@ module.exports = function(){
                         }
                     }
 
-                    scremEl.addEventListener('mouseover', function(){
-                        scrambler(true);
-                    });
+                    /*scremEl.addEventListener('mouseover', function(){
+                        if (scremEl.className.indexOf('copying') == -1){
+                            scrambler(true);
+                        }
+                    });*/
                     
                     setTimeout(function(){
                         scrambler(true);
                     }, 1000);
-                })();
+
+                    return {
+                        scramble: scrambler
+                    }
+                };
+
+                var scremEl = document.getElementById('scremail');
+                var scremElier = scremailer(scremEl);
 
                 (function(){
                     /* copy email on click */
-                    let copyEl = document.getElementById('scremail');
+                    var copyEl = document.getElementById('scremail');
 
-                    function copier(){
-                        copyEl.className = 'scremail';
+                    function copier(e){
+                        copyEl.className = 'scremail copying';
                         document.execCommand('copy');
                         copyEl.textContent = 'Copied to clipboard';
+                        setTimeout(function(){
+                            scremElier.scramble(true);
+                        }, 1300);
                     }
 
-                    copyEl.addEventListener('onclick', copier);
-                    copyEl.addEventListener('touchstart', copier);
+                    copyEl.onclick = copier;
+                    copyEl.touchstart = copier;
 
                     copyEl.addEventListener('copy', function(event) {
                         event.preventDefault();
                         if (event.clipboardData) {
-                            event.clipboardData.setData('text/plain', copyEl.textContent);
+                            event.clipboardData.setData('text/plain', e.n +'@'+ e.s +'.'+ e.d);
                             copyEl.className = 'scremail flash';
-                            console.log(event.clipboardData.getData('text'));
                         }
                     });
                 })();
