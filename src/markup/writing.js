@@ -19,6 +19,8 @@ module.exports = function(){
             <h2>Writing</h2>
             <p>The things I add to the Internet</p>
         </div>
-        ${writingsMarkup}
+        <div class="grid">
+            ${writingsMarkup}
+        </div>
     `;
 };

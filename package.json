@@ -7,13 +7,15 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "npm run build:css && npm run build:markup",
+    "start": "run-p start:server start:watch",
+    "start:server": "http-server ./ -d",
+    "start:watch": "node bin/watch.js",
+    "build": "run-s build:css build:markup",
     "build:markup": "msg -io ./src/ ./",
-    "build:css": "npm run sass && npm run autoprefixer && npm run cssnano",
-    "sass": "node-sass --output-style compressed ./src/scss/main.scss ./css/main.css",
-    "autoprefixer": "postcss -u autoprefixer -r css/**/*.css --no-map",
-    "cssnano": "postcss -u cssnano -r css/**/*.css --no-map",
-    "postbuild": "node pa11y.js"
+    "build:css": "run-s build:css:postcss build:markup",
+    "build:css:postcss": "postcss --use postcss-import postcss-custom-media autoprefixer cssnano -o css/main.css src/css/main.css --no-map",
+    "test": "npm run test:a11y",
+    "test:a11y": "node pa11y.js"
   },
   "repository": {
     "type": "git",
@@ -29,11 +31,15 @@
     "async": "^2.6.0",
     "autoprefixer": "^7.2.5",
     "cssnano": "^3.10.0",
-    "mini-site-generator": "^1.0.8",
+    "http-server": "^0.11.1",
+    "mini-site-generator": "^1.0.10",
     "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
     "pa11y": "^4.13.2",
     "postcss": "^6.0.17",
     "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.1.0"
+    "postcss-cssnext": "^3.1.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-import": "^11.1.0"
   }
 }

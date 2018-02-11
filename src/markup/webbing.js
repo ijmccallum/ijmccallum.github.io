@@ -19,6 +19,8 @@ module.exports = function(){
             <h2>Web</h2>
             <p>The things I pull from the Internet, and my opinions</p>
         </div>
-        ${webbingsMarkup}
+        <div class="grid">
+            ${webbingsMarkup}
+        </div>
     `;
 };

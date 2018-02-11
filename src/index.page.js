@@ -23,43 +23,109 @@ module.exports = function(){
                     ${criticalcss}
                 </style>
             </head>
-            <body class="pad">
-                <header class="margin-bottom">
-                    <h1>Iain J McCallum</h1>
+            <body class="padding">
+                <header class="margin-bottom columns">
+                    <div class="columns__col">
+                        <h1>Iain J McCallum</h1>
+                    </div>
+                    <div class="columns__col">
+                        <a class="margin-left" href="https://github.com/ijmccallum" target="_blank">GitHub</a>
+                        <a class="margin-left" href="http://codepen.io/ijmccallum/" target="_blank">CodePen</a>
+                        <a class="margin-left" href="https://www.linkedin.com/in/iainjmccallum" target="_blank">Linkedin</a>
+                        <a class="margin-left" href="ttps://twitter.com/IJMcCallum" target="_blank">Twitter</a>
+                    </div>
                 </header>
-
+                
                 <div class="margin-bottom">
-                    <h2>Work</h2>
-                    <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Hero Digital</a> and a core contributor to the <a href="http://www.wikilogicfoundation.org/about-wikilogic/">WikiLogic Foundation</a>.</p>
-                    <p>To get in contact with me, try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
+                    <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Hero Digital</a>.
+                    I work with performance, accessibility, and everything JavaScript.</p>
+                    <p>To get in contact with me: <span id="scremail" class="scremail">holdonforasec@dont.yet</span> or try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
                 </div>
                     
-                <div class="margin-bottom columns">
-                    <div class="columns__col">
-                        ${writingMarkup}
-                    </div>
-                    <div class="columns__col-gap"></div>
-                    <div class="columns__col">
-                        ${webbingMarkup}
-                    </div>
+                <div class="margin-bottom">
+                    ${writingMarkup}
+                </dic>
+                
+                <div class="margin-bottom">
+                    ${webbingMarkup}
                 </div>
-                <div class="margin-bottom columns">
-                    <div class="columns__col">
-                        ${podcastingMarkup}
-                    </div>
+
+                <div class="margin-bottom">
+                    ${podcastingMarkup}
                 </div>
 
                 <div id="footer">
-                    <div class="margin-bottom">
-                        <a class="margin-right" href="https://github.com/ijmccallum">GitHub</a>
-                        <a class="margin-right" href="http://codepen.io/ijmccallum/">CodePen</a>
-                        <a class="margin-right" href="https://www.linkedin.com/in/iainjmccallum">Linkedin</a>
-                        <a class="margin-right" href="ttps://twitter.com/IJMcCallum">Twitter</a>
-                    </div>
                     <p>What's that weird thing in the tab of your site? It's a question. Or an invitation. Either way it's aimed at you.</p>
                 </div>
                 <script>
                 console.log("%cOh hello there, what are you up to? \\nNothing much to see I'm afraid. \\nJust keeping it simple. \\nIf you're looking to see what my JS writings are like, \\nI would recommend https://github.com/WikiLogic. \\nIt's really rather good! \\nThank you for popping in though, \\nit's been a pleasure!", "color: #222; font-family: 'Crimson Text',serif; font-size: 19px; line-height: 1.4;");
+                /* email scrambler! */
+                (function(){
+                    let scremEl = document.getElementById('scremail');
+                    let scrambleSteps = 10, scrambleStepCounter = 0;
+                    let e = {
+                        n: 'iainjmccallum',
+                        s: 'gmail',
+                        d: 'com'
+                    };
+
+                    function rndString(ln) {
+                        let rtn = '';
+                        let choices = 'abcdefghijklmnopqrstuvwxyz';
+                        for (var c = 0; c < ln; c++) {
+                            rtn += choices[Math.floor(Math.random() * choices.length)];
+                        }
+                        return rtn;
+                    }
+
+                    function generateEmail(isFinal){
+                        if (isFinal) {
+                            return e.n +'@'+ e.s +'.'+ e.d;
+                        }
+                        return rndString(e.n.length) +'@'+ rndString(e.s.length) +'.'+ rndString(e.d.length);
+                    }
+
+                    function scrambler(showWhenDone){
+                        scremEl.textContent = generateEmail();
+                        scrambleStepCounter ++;
+                        if (scrambleStepCounter <= scrambleSteps) {
+                            window.requestAnimationFrame(() => {scrambler(showWhenDone)});
+                        } else {
+                            if (showWhenDone) {
+                                scremEl.textContent = generateEmail(true);
+                            }
+                            scrambleStepCounter = 0;
+                        }
+                    }
+
+                    scremEl.addEventListener('mouseover', function(){
+                        scrambler(true);
+                    });
+                    
+                    setTimeout(function(){
+                        scrambler(true);
+                    }, 1000);
+                })();
+
+                (function(){
+                    /* copy email on click */
+                    let copyEl = document.getElementById('scremail');
+
+                    copyEl.onclick = function() {
+                        copyEl.className = "scremail";
+                        document.execCommand("copy");
+                        copyEl.textContent = "Copied to clipboard";
+                    }
+
+                    copyEl.addEventListener("copy", function(event) {
+                        event.preventDefault();
+                        if (event.clipboardData) {
+                            event.clipboardData.setData("text/plain", copyEl.textContent);
+                            copyEl.className = "scremail flash";
+                            console.log(event.clipboardData.getData("text"))
+                        }
+                    });
+                })();
                 </script>
             </body>
         </html>
