@@ -1,14 +1,14 @@
 const fs = require('fs');
 const projects = require('./markup/projects.js');
 const writings = require('./markup/writing.js');
-const webbings = require('./markup/webbing.js');
+const tools = require('./markup/tools.js');
 const podcasts = require('./markup/podcasts.js');
 
 module.exports = function(){
     var criticalcss = fs.readFileSync('./css/main.css','utf8'); //relative to the root I guesss
     const projectMarkup = projects();
     const writingMarkup = writings();
-    const webbingMarkup = webbings();
+    const toolMarkup = tools();
     const podcastingMarkup = podcasts();
     
     return html`
@@ -56,7 +56,7 @@ module.exports = function(){
 
                 <hr>
                 
-                ${webbingMarkup}
+                ${toolMarkup}
                 
                 <hr>
                 

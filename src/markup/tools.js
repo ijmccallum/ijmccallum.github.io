@@ -1,15 +1,15 @@
-var webbings = require('./webbing.json');
+var tools = require('./tools.json');
 
 module.exports = function(){
 
-    let webbingsMarkup = '';
-    webbings.finds.forEach(function(web) {
-        webbingsMarkup += html`
+    let toolsMarkup = '';
+    tools.finds.forEach(function(tool) {
+        toolsMarkup += html`
             <article>
                 <header>
-                    <h3><a href="${web.url}">${web.title}</a></h3>
+                    <h3><a href="${tool.url}">${tool.title}</a></h3>
                 </header>
-                <p>${web.description}</p>
+                <p>${tool.description}</p>
             </article>
         `;
     });
@@ -22,7 +22,7 @@ module.exports = function(){
             </div>
         </div>
         <div class="grid">
-            ${webbingsMarkup}
+            ${toolsMarkup}
         </div>
     `;
 };
