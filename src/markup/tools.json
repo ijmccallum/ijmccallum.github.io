@@ -8,7 +8,7 @@
         {
             "title": "Let's Encrypt",
             "url": "https://letsencrypt.org/",
-            "description": "SSL (HTTPS) certs aren't hard and they don't cost money (unless you want a fancy one) - so there's no excuse, HTTPS all your sites!"
+            "description": "SSL certs are hard. But less so now with this beauty of a tool! And it's free - it's FREE! (unless you want a fancy one) - so there's no excuse, HTTPS all your sites! All your projects! All the things!"
         },
         {
             "title": "Pa11y",
