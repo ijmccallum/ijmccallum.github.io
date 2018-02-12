@@ -23,7 +23,7 @@
         {
             "title": "Visual Studio Code",
             "url": "https://code.visualstudio.com/",
-            "description": "I love it! The plugin's I've got running at the moment are: 'Bracket Pair Colorizer', 'ESLint', 'Project Manager', 'GitLens'. Took a bit of effort to move over from Sublime, but since I've moved the speed of improvments coming through has been incredible!"
+            "description": "I love it! The plugin's I've got running at the moment are: 'Bracket Pair Colorizer', 'ESLint', 'Prettier', 'Project Manager', 'GitLens', 'Import Cost', 'TODO Highlight', and a few language syntax highlighting ones. Took a bit of effort to move over from Sublime, but since I've moved the speed of improvments coming through has been incredible!"
         },
         {
             "title": "Markdown",
