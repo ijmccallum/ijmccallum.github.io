@@ -46,7 +46,7 @@
             "description": "Because linting is always a good thing."
         },
         {
-            "title": "mRemoteNG"
+            "title": "mRemoteNG",
             "url": "https://mremoteng.org/",
             "description": "Used at work - a handy little tool to manage all your server connections: ssh / rdp / and others, just for the tabs really! It's easier than straight up putty or the windows rdp thing, or at least I find it easier."
         }
