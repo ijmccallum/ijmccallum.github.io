@@ -9,7 +9,7 @@
 
 ## [Functional-Light-JS](https://github.com/getify/Functional-Light-JS)
 
-A deep run through of basic functional programming for JavaScript. It also helps solidify an understanding of JS, particularly scopes and closures.
+A deep run through of basic functional programming for JavaScript. It also helps solidify an understanding of JS, particularly scopes and closures. And it has an amazing line saying that immutable variables "reduce the surface area of surprise". Love that!
 
 ## [The Architecture of Open Source Applications](http://aosabook.org/en/index.html)
 
