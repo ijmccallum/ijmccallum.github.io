@@ -58,7 +58,7 @@ arrays, trees, singly-linked and doubly-linked lists, and hash tables
 `WORD_DESC` a word and the flags associated with the word
 `WORD_LIST` a linked list of words - most of your interaction with the shell is through these.
 
-uses [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) to run the command line editing.
+uses [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) to run the command line editing.  
 
 ## Articles
 
