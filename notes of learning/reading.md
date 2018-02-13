@@ -7,6 +7,10 @@
 - [ ] causality models reasoning and inference
 
 
+## [Functional-Light-JS](https://github.com/getify/Functional-Light-JS)
+
+A deep run through of basic functional programming for JavaScript. It also helps solidify an understanding of JS, particularly scopes and closures.
+
 ## [The Architecture of Open Source Applications](http://aosabook.org/en/index.html)
 
 In depth overviews / critiques of the system designs behind some great open source projects.
