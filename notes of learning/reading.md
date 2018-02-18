@@ -37,23 +37,13 @@ Audacity has grown organically, no plan was laied down, hence the city like code
 
 ### [BASH](https://www.gnu.org/software/bash/) the Bourne Again SHell
 
-I'd bet you're familiar with it. 
-Primitives:
- - Reserve words `if` `while` `for`
- - words "anything"
- - operators `|` `>`
+I'd bet you're familiar with it. It's a language unto itself! With reserved words (`if`, `while`, `for`), operators (`|`, `>`), variables (strings, integers, arrays (indexed or associative, of strings or integers - not other arrays)), and more. Input comes from the keyboard or scripts then is run through a pipeline: 
 
-variables: `name=value` or `another=` (considered 'unset'). Stored in hash tables. Linked lists of hash tables to implement scoping.
- - strings
- - integers
- - arrays, indexed or associative, (of strings or integers - not other arrays)
+"Input Processing" - built on top of [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) which handles the command line editing
+"Parsing" - splits a stream of characters into words and applying meaning. Lots of intricacies there. 
+"Word Expansion" - Applys variables, expands a lot of utility like mini functions (my words!). eg `pre{one,two,three}post` to `preonepost pretwopost prethreepost`. And a lot more.
+"Command Execution" - usually a command name passed to the OS with a list of arguments. But also the meat of the Bash programming language.
 
-The pipe - a gift from Unix to the world! Output from one command becomes the input of the next.
-Standard input
-Standard output
-Standard error
-
-Shell functions (executed in the same context in which they are called) and shell scripts (executed in a new shell, only have access to things passed between processes) - ways to name a group of commands
 
 All implemented using only a few data structures:
 
@@ -62,7 +52,6 @@ arrays, trees, singly-linked and doubly-linked lists, and hash tables
 `WORD_DESC` a word and the flags associated with the word
 `WORD_LIST` a linked list of words - most of your interaction with the shell is through these.
 
-uses [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) to run the command line editing.  
 
 ## Articles
 
