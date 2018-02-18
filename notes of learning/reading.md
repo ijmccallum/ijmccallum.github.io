@@ -35,6 +35,8 @@ Some audio is too big to be handled with speed, or even to fit in RAM. Audacity 
 
 Audacity has grown organically, no plan was laied down, hence the city like code.
 
+_My thoughts: _
+
 ### [BASH](https://www.gnu.org/software/bash/) the Bourne Again SHell
 
 I'd bet you're familiar with it. It's a language unto itself! With reserved words (`if`, `while`, `for`), operators (`|`, `>`), variables (strings, integers, arrays (indexed or associative, of strings or integers - not other arrays)), and more. Input comes from the keyboard or scripts then is run through a pipeline: 
