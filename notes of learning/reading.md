@@ -19,7 +19,9 @@ In depth overviews / critiques of the system designs behind some great open sour
 
 [Github](https://github.com/asterisk/asterisk).
 
-A Multi format, extensible phone server. Allows communication between many phone technologies (VoIP, Old school, and more I'm sure). Also allows 'dialplans' - applications whos UI is essentially your phone call. EG automated answering giving you options in a phone menu, I'm guessing robo calls too. An incoming phone call is recieved by Asterisk, the type of tech is checked and a module for translating the tech specicif connection into a generic connection is assigned. The newly translated generic connection is then hooked up to an `ast_channel` - an object that will run the dialplan within Asterisk. That dialplan could be a phone menu or it could request a connection to another phone (which would run another connection but from generic to tech specific). If the outbound call tech matches the in bound, a direct connection may be initiated to save on translation into and out of the generic channel type. Loads more details in the article - examless in C but the overview is good!
+A Multi format, extensible phone server. Allows communication between many phone technologies (VoIP, Old school, and more I'm sure). Also allows 'dialplans' - applications whos UI is essentially your phone call. EG automated answering giving you options in a phone menu, I'm guessing robo calls too. An incoming phone call is recieved by Asterisk, the type of tech is checked and a module for translating the tech specicif connection into a generic connection is assigned. The newly translated generic connection is then hooked up to an `ast_channel` - an object that will run the dialplan within Asterisk. That dialplan could be a phone menu or it could request a connection to another phone (which would run another connection but from generic to tech specific). If the outbound call tech matches the in bound, a direct connection may be initiated to save on translation into and out of the generic channel type. 
+
+_The examples are a bit hard to decipher (written in C, which I'm not familiar with), but there are loads of details in the article which clarify things. Specifically the abstraction from connection tech to a general internal connection - that process will probably stick in my head for a good long while, so much simpler and clear than I would have guessed for a phone system like this!_
 
 ### [Audacity](https://www.audacityteam.org/)
 
@@ -35,25 +37,17 @@ Some audio is too big to be handled with speed, or even to fit in RAM. Audacity 
 
 Audacity has grown organically, no plan was laied down, hence the city like code.
 
-_My thoughts: _
+_The most applicable thing I've picked up from this is something like "non-array like arguments make code smell... a bit", or at least indicate that some thinking / explanation is required. Also, writing cross platform creates restrictions - glad I'm in the web space, going to stick here as much as I can!_
 
 ### [BASH](https://www.gnu.org/software/bash/) the Bourne Again SHell
 
-I'd bet you're familiar with it. It's a language unto itself! With reserved words (`if`, `while`, `for`), operators (`|`, `>`), variables (strings, integers, arrays (indexed or associative, of strings or integers - not other arrays)), and more. Input comes from the keyboard or scripts then is run through a pipeline: 
+I'd bet you're familiar with it. It's a language unto itself! With reserved words (`if`, `while`, `for`), operators (`|`, `>`), variables (strings, integers, arrays (indexed or associative, of strings or integers - not other arrays)), and more. Input comes from the keyboard or scripts then is run through a pipeline: "Input Processing" - built on top of [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) which handles the command line editing. "Parsing" - splits a stream of characters into words and applying meaning. Lots of intricacies there. "Word Expansion" - Applys variables, expands a lot of utility like mini functions (my words!). eg `pre{one,two,three}post` to `preonepost pretwopost prethreepost`. And a lot more. There's some overlap in responsability between this and Parsing. "Command Execution" - usually a command name passed to the OS with a list of arguments. But also the meat of the Bash programming language.
 
-"Input Processing" - built on top of [readline](https://tiswww.case.edu/php/chet/readline/rltop.html) which handles the command line editing
-"Parsing" - splits a stream of characters into words and applying meaning. Lots of intricacies there. 
-"Word Expansion" - Applys variables, expands a lot of utility like mini functions (my words!). eg `pre{one,two,three}post` to `preonepost pretwopost prethreepost`. And a lot more.
-"Command Execution" - usually a command name passed to the OS with a list of arguments. But also the meat of the Bash programming language.
+_This one was a streatch for me to understand. But the final section on "lessons learned" was clear enough: keep detailed change logs, have extensive regression testing built in, standards are good if you can have them, keep good detailed documentation, find and use good software to help._
 
+### [Berkeley DB](http://aosabook.org/en/bdb.html)    
 
-All implemented using only a few data structures:
-
-arrays, trees, singly-linked and doubly-linked lists, and hash tables
-
-`WORD_DESC` a word and the flags associated with the word
-`WORD_LIST` a linked list of words - most of your interaction with the shell is through these.
-
+The 20 year old "grandfather of the NoSQL movement".
 
 ## Articles
 
