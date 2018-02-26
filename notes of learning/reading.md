@@ -1,5 +1,5 @@
 ## resource lists
-
+- [ ] https://github.com/andrew--r/frontend-case-studies
 - [ ] https://github.com/Developer-Y/Scalable-Software-Architecture
 - [ ] https://github.com/mojoaxel/awesome-regression-testing#online-services
 
