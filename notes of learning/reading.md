@@ -62,25 +62,36 @@ Bugs usually imply a misunderstanding, look for that misunderstanding rather tha
 
 ## [Scalable Web Architecture and Distributed Systems](http://aosabook.org/en/distsys.html)
 
-At it's most basic - sending resources from many servers. Aiming to be available (redundancy in key components, rapid rcovery, and graceful degredation). Fast. Reliable (users data is persistant, responses are consistant). Scalable (easy to add more storage, processing power). Managable (easy to operate and debug). Cheap (dev maintenance time, training time, all comes under ownership time).
+At it's most basic - sending resources from many servers to many clients while aiming to be: 
 
-Service Orientated Architecture: essentially the formal defenition of the design used in Berkeley DB. Image service example splits reading images from writing images into their own services to allow for scaling of one independantly of the other.
+ - *available* (redundancy in key components, rapid rcovery, and graceful degredation)
+ - *fast*
+ - *reliable* (users data is persistant, responses are consistant)
+ - *scalable* (easy to add more storage, processing power)
+ - *managable* (easy to operate and debug)
+ - *cheap* (dev maintenance time, training time, all comes under ownership time)
 
-Redundancy. Just like you (should) have multiple copies of your data, same goes for services. "Shared-nothing architecture" - a system of nodes each of which can operate independantly of the others, no central brain, no central point of failure! Eg, load balancing! That's in terms of crating copies, partitions create divisions within the data, eg all dog photos are stored on a dog data store partition and all cat photos stored on a cat partition.
+The article discuses high level concepts to achieve these aims within a Service Orientated Architecture: essentially the formal defenition of the design used in Berkeley DB. They use an Image service (eg Flickr) as an example. The services in that layout are reading images, writing images, and the database. Split with the idea that reading will most likely need to scale independantly from writing, and in a different way. 
 
-Fast Data Access: reading from disk is sloooow, from memory is fast! Some important strategies are caches, proxies, indexes, and load balancers.
+The high level concepts:
 
-Caching, relys on the ["locality of reference"](https://en.wikipedia.org/wiki/Locality_of_reference) principle. Things that were just asked for are more likely to be asked for again. For services - each could have it's own cache (on disk and in memory) to check before going to a lower layer. A services local on disk cache will still be faster thar requesting over a network. Though you will need a good load balancing strategy to avoid cache misses when subsequent requests are sent to different nodes.
+*Redundancy*. Just like you (should) have multiple copies of your data, same goes for services. "Shared-nothing architecture" - a system of nodes each of which can operate independantly of the others, no central brain, no central point of failure! Eg, load balancing! 
 
-Global caches would be another service that all nodes would query. They can either take responsability for fullfilling a request from disk if a resource isn't already in the cache (the common way) or they can leave that up the the requester (if your application logic is better at caching strategies than your cache). Distributed caches are, to my mind, a partitioned global cache. [memcached](http://memcached.org/) [squid](http://www.squid-cache.org/) [varnish](https://varnish-cache.org/)
+*Partitioning* - createing divisions within the data, eg all dog photos are stored on a dog data store partition and all cat photos stored on a cat partition.
 
-Proxies! Take a request, send it somewhere else, possibly modifying it. They can do some fancy things: Collapsed Forwarding - if multiple requests for the same data come in, they can be collapsed into one request to the resource. They can also collapse requests for spatially close data into one large request.  
+*Caching*, relys on the ["locality of reference"](https://en.wikipedia.org/wiki/Locality_of_reference) principle. Things that were just asked for are more likely to be asked for again. For services - each could have it's own cache (on disk and in memory) to check before going to a lower layer. A service's local on-disk cache will still be faster thar requesting a resource from a cache over the network. Though you will need a good load balancing strategy to avoid cache misses when subsequent requests are sent to different nodes by your load balancer.
 
-Indexes! Slower writes (update data and the index) faster reads. Really good for large collections of tiny things. Often they are in layers. They should be used tactifully, indexing too much information can result in indexes too large to be useful. Research in this area continues!
+*Global caches* would be another service that all nodes would query. They can either take responsability for fullfilling a request from disk if a resource isn't already in the cache (the common way) or they can leave that up the the requester (if your application logic is better at caching strategies than your cache). 
 
-Load Balancers. [haproxy](http://www.haproxy.org/) A central point from which requests can be split between multiple nodes. For complex systems there can even be multiple layers of them. One of the challenges is persistant sesson data, but then again I'm primarily a FED so I'll take care of that :P Splitting requests can be done randomly, interativly, or by utilization and capacity rates. They can also notice when nodes become unresponsive and take them out of the system (this feels a bit much for a load balancer to be doing imo, rather some kind of monitoring happening, but then again - I guess the load balancer will have to know when changes are made)
+*Distributed caches* are, to my mind, a partitioned global cache. [memcached](http://memcached.org/) [squid](http://www.squid-cache.org/) [varnish](https://varnish-cache.org/)
 
-Queues. One server many clients, all request directly to the server, if one takes a while the others have to wait. If the server fails, the client fails. A queue would be another service that recieves requests, pop them into a list, then workers pick up the task when they have capacity and fullfill it. They also protect from system failures and can retry failed requests. [rabbitmq](http://www.rabbitmq.com/), [activemq](http://activemq.apache.org/), [kr.github.io](http://kr.github.io/beanstalkd/)
+*Proxies* take a request, send it somewhere else, possibly modifying it. They can do some fancy things: Collapsed Forwarding - if multiple requests for the same data come in, they can be collapsed into one request to the resource. They can also collapse requests for spatially close data into one large request.  
+
+*Indexes*! Slower writes (update data and the index) faster reads. Really good for large collections of tiny things. Often they are in layers. They should be used tactifully, indexing too much information can result in indexes too large to be useful. Research in this area continues!
+
+*Load Balancers*. [haproxy](http://www.haproxy.org/) A central point from which requests can be split between multiple nodes. For complex systems there can even be multiple layers of them. One of the challenges is persistant sesson data, but then again I'm primarily a FED so I'll take care of that :P Splitting requests can be done randomly, interativly, or by utilization and capacity rates. They can also notice when nodes become unresponsive and take them out of the system (this feels a bit much for a load balancer to be doing imo, rather some kind of monitoring happening, but then again - I guess the load balancer will have to know when changes are made)
+
+*Queues*. One server many clients, all request directly to the server, if one takes a while the others have to wait. If the server fails, the client fails. A queue would be another service that recieves requests, pop them into a list, then workers pick up the task when they have capacity and fullfill it. They also protect from system failures and can retry failed requests. [rabbitmq](http://www.rabbitmq.com/), [activemq](http://activemq.apache.org/), [kr.github.io](http://kr.github.io/beanstalkd/)
 
 ## Articles
 
