@@ -5,6 +5,7 @@
 
 - [ ] probabilistic reasoning in intelligent systems networks of plausible inference
 - [ ] causality models reasoning and inference
+- [ ] https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g a11y playlist
 
 
 ## [Functional-Light-JS](https://github.com/getify/Functional-Light-JS)
