@@ -6,6 +6,8 @@
  - [x] PHP *Not really a big fan of this one, didn't really click.*
  - [ ] Go
  - [ ] C/C++
+ 
+https://developers.google.com/machine-learning/crash-course/prereqs-and-prework
 
 ## Project Ideas:
 
