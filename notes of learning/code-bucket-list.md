@@ -11,6 +11,7 @@ https://developers.google.com/machine-learning/crash-course/prereqs-and-prework
 https://strapi.io/demo for any new APIs with basic content that I/a client creates  
 http://swaggerstats.io/ to monitor the strapi api?  
 http://paperjs.org/tutorials/ SVG scripting?  
+https://www.elastic.co/ Elastic search! All Open apparently :)
 
 ## Project Ideas:
 
