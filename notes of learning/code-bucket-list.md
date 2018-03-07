@@ -30,17 +30,12 @@ https://www.elastic.co/ Elastic search! All Open apparently :)
 
 ## Tools to learn:
 
- - [ ] Kubernetes
-     - [x] module 1:https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/
-     - [x] module 2: https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-intro/
-     - [ ] module 3: https://kubernetes.io/docs/tutorials/kubernetes-basics/explore-intro/
-     - [ ] helm (distributed systems package manager)
- - [ ] Vue
+ - [ ] Vue (with all the modern fun things! Webpack 4...)
  - [ ] Angular n.n
 
 ## 30 Day Challenges 
 
- - [ ] MDN
+ - [x] MDN
  - [ ] Node
  - [ ] Go
  
