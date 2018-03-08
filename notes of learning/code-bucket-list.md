@@ -33,6 +33,7 @@ https://www.elastic.co/ Elastic search! All Open apparently :)
  - [ ] Vue (with all the modern fun things! Webpack 4...)
  - [ ] Angular n.n
  - [ ] (Fraternate)[https://github.com/Isithelo/Fraternate] for user management!
+ - [ ] (moleculer)[https://moleculer.services/] node microservices - also write up / learn why this way.
 
 ## 30 Day Challenges 
 
