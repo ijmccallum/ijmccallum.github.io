@@ -45,6 +45,7 @@ https://www.elastic.co/ Elastic search! All Open apparently :)
  
 ## Reading list
 
+- [ ] https://www.youtube.com/watch?v=aL6SouuO0_k rewatch and work up my own example. Possibly use in WL
 - [ ] https://github.com/Developer-Y/Scalable-Software-Architecture
 - [ ] http://aosabook.org/en/index.html
 - [ ] https://github.com/mojoaxel/awesome-regression-testing#online-services
