@@ -18,6 +18,7 @@ https://www.elastic.co/ Elastic search! All Open apparently :)
 
  - [x] Make a [Static site generator](https://www.npmjs.com/package/mini-site-generator) just using js template strings.
  - [ ] Whisky Tracker: point tracking - one on one ...
+ - [ ] Betes tracker: list foods you eat, rough in blood sugar graphs & insulin. Multiple users to aggregate data for speed of relative digestion / relative impact...
  - [ ] Task wars / market: pay 'money' to assign tasks - more for a higher priority / ahead in the queue. Price adjusts depending on individual queues.
  - [ ] Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
  - [x] [Console Madness](https://github.com/ijmccallum/consoleMadness): makes it look like you are doing something phenominal but you're just typing randomly
