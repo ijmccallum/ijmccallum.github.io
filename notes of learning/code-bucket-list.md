@@ -5,6 +5,7 @@
  - [x] JavaScript *Love it! Bread and butter.*
  - [x] PHP *Not really a big fan of this one, didn't really click.*
  - [ ] Elm
+ - [ ] Python
  - [ ] Go
  - [ ] C/C++
  
