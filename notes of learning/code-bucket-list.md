@@ -13,6 +13,7 @@ https://strapi.io/demo for any new APIs with basic content that I/a client creat
 http://swaggerstats.io/ to monitor the strapi api?  
 http://paperjs.org/tutorials/ SVG scripting?  
 https://www.elastic.co/ Elastic search! All Open apparently :)
+https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repeatable-Kubernetes-development.html?m=1
 
 ## Project Ideas:
 
