@@ -26,7 +26,7 @@ https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repea
  - [ ] Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
  - [x] [Console Madness](https://github.com/ijmccallum/consoleMadness): makes it look like you are doing something phenominal but you're just typing randomly
  - [ ] Javascript your Genome: http://genomejs.readme.io/docs/what-do-i-do - 1st get my genome sequenced, then do things with the data!
- - [ ] random: map out google location history https://codeburst.io/how-i-created-a-heatmap-of-my-location-history-with-javascript-google-maps-972a2d1be240
+ - [x] random: map out [google location history](https://codeburst.io/how-i-created-a-heatmap-of-my-location-history-with-javascript-google-maps-972a2d1be240)... wow that's a bit scary - really obvious where we've lived!
  - [ ] [WikiLogic](https://github.com/WikiLogic/WikiLogic): in progress!
  - [ ] Build some kind of map / plan thing with [WRLD](https://www.wrld3d.com/) here's a [tutorial](https://www.sitepoint.com/building-dynamic-3d-maps/). To link in with Westport & Co possibly.
  - [ ] Build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
