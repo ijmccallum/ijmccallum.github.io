@@ -61,3 +61,14 @@ https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repea
 - [ ] [The Architecture of Open Source Applications](http://aosabook.org/en/index.html) Vol 1
     - [x] [asterisk](http://aosabook.org/en/asterisk.html) Multi format, extensible phone server - details in C but the overview is good!
     - [ ]
+
+
+```js
+function stop(whatTime) {
+	if (whatTime == 'hammer time') {
+		//add a hammer time gif from giphy, flash the colors on the site
+	}
+}
+
+stop('hammer time')
+```
