@@ -35,6 +35,7 @@ https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repea
 
 ## Tools to learn:
 
+ - [ ] https://sailsjs.com/get-started
  - [ ] Vue (with all the modern fun things! Webpack 4...)
  - [ ] Angular n.n
  - [ ] (Fraternate)[https://github.com/Isithelo/Fraternate] for user management!
