@@ -46,3 +46,23 @@ If you have a design problem, and you're inclined to make a quick fix now instea
 Bugs usually imply a misunderstanding, look for that misunderstanding rather than just the bug - it's likely to inform your understanding of a system and any underlying fundamental flaws in it's design.
 
 "When asked what it meant for something to be object-oriented, [Butler Lampson](https://en.wikipedia.org/wiki/Butler_Lampson) said it meant being able to have multiple implementations behind an API".
+
+## 5. [CMake](http://aosabook.org/en/cmake.html)
+
+A better build system (than vs project files for windows and configure script / makefiles for unix). Cross platform way of building a shared library. Not going to lie - this one sounded beyond me, I don't use anything even related to this.
+
+## 6. [Eclipse](http://aosabook.org/en/eclipse.html)
+
+7th Nov 2001 - 1.0 was a component based platform for buiding tools for devs. The platform handles some basic set up and plumbing that deals with file system & other things. Plugins extend this platform through "extension points". It didn't go into a huge amount of detail but I got the impression they're a bit like the "hooks" you find in WordPress.
+APIs are also provided to do... things! "API is forever" - an Eclipse mantra.
+JDT (Java Development Tools) - they wrote their own Java compiler in order to provide extension points within the compiler (wouldn't be possible with a third party compiler.)
+
+Pre 3.0 Plugins could define other plugins as dependencies then they would have access to the classes within the given plugins. They (I believe) could also define their own extention points and extensions (from other extension points?). With 3.0 the plugin system switched to OSGi, a third party (community) that provided a modularity framework for Java. It examins each bundle (plugin) then constructs a "class path" for each one.
+
+OSGi and the Eclipse extensions registry (the previous I think) are "Service programming models". They contain producers, consumers, and a broker that is responsible for coordinating the relationship between them.
+
+RCP - people started using eclipse as a platform from which to build actual applications.
+
+p2 provisioning system - a way to make partial updates... this one was a bit beyond me.
+
+The APIs they created seem to be too complex, should have been simpler. Interesting / unexpected use cases were discovered but also a lot of noise came from the community about edge cases that take a lot of time to implement.
