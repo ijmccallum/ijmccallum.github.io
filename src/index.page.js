@@ -1,17 +1,17 @@
-const fs = require('fs');
-const projects = require('./markup/projects.js');
-const writings = require('./markup/writing.js');
-const tools = require('./markup/tools.js');
-const podcasts = require('./markup/podcasts.js');
+const fs = require("fs");
+const projects = require("./markup/projects.js");
+const writings = require("./markup/writing.js");
+const tools = require("./markup/tools.js");
+const podcasts = require("./markup/podcasts.js");
 
-module.exports = function(){
-    var criticalcss = fs.readFileSync('./css/main.css','utf8'); //relative to the root I guesss
-    const projectMarkup = projects();
-    const writingMarkup = writings();
-    const toolMarkup = tools();
-    const podcastingMarkup = podcasts();
-    
-    return html`
+module.exports = function() {
+  var criticalcss = fs.readFileSync("./css/main.css", "utf8"); //relative to the root I guesss
+  const projectMarkup = projects();
+  const writingMarkup = writings();
+  const toolMarkup = tools();
+  const podcastingMarkup = podcasts();
+
+  return html`
         <!DOCTYPE html>
         <html lang="en">
             <head>
@@ -22,6 +22,7 @@ module.exports = function(){
                 <!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
                 <link rel="manifest" href="manifest.json">
                 <style>
+                    /* currently this is bringing in everything. Future TODO: split out the crit stuff here! */
                     ${criticalcss}
                 </style>
             </head>
@@ -35,17 +36,26 @@ module.exports = function(){
                         <a class="margin-right" href="https://github.com/ijmccallum" target="_blank">GitHub</a>
                         <a class="margin-right" href="http://codepen.io/ijmccallum/" target="_blank">CodePen</a>
                         <a class="margin-right" href="https://www.linkedin.com/in/iainjmccallum" target="_blank">Linkedin</a>
-                        <a class="margin-right" href="ttps://twitter.com/IJMcCallum" target="_blank">Twitter</a>
+                        <a class="margin-right" href="https://twitter.com/IJMcCallum" target="_blank">Twitter</a>
                     </div>
                 </header>
                 <div class="grid">
                     <div class="margin-bottom span-2">
-                        <p>I'm a <a href="http://www.delphicdigital.com/blog/author/iain-mccallum">Front End Developer at Hero Digital</a>.
-                        I work with performance, accessibility, and everything JavaScript.</p>
-                        <p>To get in contact with me: <span id="scremail" class="scremail" title="click to copy">holdonforasec@dont.yet</span> or try <a href="https://twitter.com/IJMcCallum">Twitter</a> which I check semi-regularly, or (if you're up for something more interesting) use a <a href="https://github.com/ijmccallum/ijmccallum.github.io">pull request</a>!</p>
+                        <p>Hi, I'm a Front End Developer</a>. 
+                        Professionally I work with performance, accessibility, styling, and everything JavaScript. 
+                        Recreationally I work on Node apps, play with DevOps, study app architecture, and consume endless podcasts to keep up with our industry.</p>
+                        <p>TLDR: I really enjoy writing code.</p>
+                        <p><span id="scremail" class="scremail" title="click to copy">holdonforasec@dont.yet</span></p>
                     </div>
                 </div>
 
+                <hr>
+                    <div class="margin-bottom grid">
+                        <div>
+                            <h2>Professional Projects</h2>
+                            <p>I have a big spreadsheet to keep track of them all that I'm happy to share. Lets grab a cup of coffee (virtual or otherwise) and I can run through them with you!</p>
+                        </div>
+                    </div>
                 <hr>
 
                 ${projectMarkup}
@@ -154,4 +164,4 @@ module.exports = function(){
             </body>
         </html>
     `;
-}
+};
