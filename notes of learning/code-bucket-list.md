@@ -19,8 +19,11 @@ https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repea
 ## Project Ideas:
 
  - [x] Make a [Static site generator](https://www.npmjs.com/package/mini-site-generator) just using js template strings.
+ - [ ] Betes tracker: list foods you eat, rough in blood sugar graphs & insulin. Multiple users to aggregate data for speed of relative digestion / relative impact... in progress!
+ - [ ] Boat picks sharing web app thing... dad's idea
+ - [ ] Library sharer - unless a good one exists already
  - [ ] Whisky Tracker: point tracking - one on one ...
- - [ ] Betes tracker: list foods you eat, rough in blood sugar graphs & insulin. Multiple users to aggregate data for speed of relative digestion / relative impact...
+ - [ ] Get to know / write up Karp's 21 NP-complete problems
  - [ ] css classic posters / graphic design
  - [ ] Task wars / market: pay 'money' to assign tasks - more for a higher priority / ahead in the queue. Price adjusts depending on individual queues.
  - [ ] Chrome extension: color the background of tabs based on url keywords (eg, "localhost" : dark grey, "staging": red, etc)
