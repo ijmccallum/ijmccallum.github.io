@@ -3,8 +3,8 @@
 ## Languages to work with in a production app:
 
  - [x] JavaScript *Love it! Bread and butter.*
- - [x] PHP *Not really a big fan of this one, didn't really click.*
- - [ ] Elm
+ - [ ] Typescript
+ - [x] PHP *ish*
  - [ ] Python
  - [ ] Go
  - [ ] C/C++
@@ -39,16 +39,18 @@ https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repea
 ## Tools to learn:
 
  - [ ] https://sailsjs.com/get-started
- - [ ] Vue (with all the modern fun things! Webpack 4...)
+ - [ ] Vue
  - [ ] Angular n.n
- - [ ] (Fraternate)[https://github.com/Isithelo/Fraternate] for user management!
- - [ ] (moleculer)[https://moleculer.services/] node microservices - also write up / learn why this way.
+ - [ ] d3 in depth
+ - [ ] immutable.js
+ - [ ] rxjs
 
 ## 30 Day Challenges 
 
  - [x] MDN
  - [ ] Node
  - [ ] Go
+ - [ ] d3.js
  
  
 ## Reading list
