@@ -15,6 +15,7 @@ http://swaggerstats.io/ to monitor the strapi api?
 http://paperjs.org/tutorials/ SVG scripting?  
 https://www.elastic.co/ Elastic search! All Open apparently :)
 https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repeatable-Kubernetes-development.html?m=1
+https://github.com/i0natan/nodebestpractices Node best practices
 
 ## Project Ideas:
 
