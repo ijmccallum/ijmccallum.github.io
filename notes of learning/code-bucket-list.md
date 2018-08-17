@@ -45,6 +45,9 @@ https://github.com/i0natan/nodebestpractices Node best practices
  - [ ] d3 in depth
  - [ ] immutable.js
  - [ ] rxjs
+ - [ ] Jenkins (for work)
+ - [ ] IBM MQ (for work)
+ - [ ] Cobol? (for work)
 
 ## 30 Day Challenges 
 
