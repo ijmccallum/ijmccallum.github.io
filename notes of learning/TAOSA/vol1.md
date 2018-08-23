@@ -71,9 +71,9 @@ The APIs they created seem to be too complex, should have been simpler. Interest
 
 A network based (as in accessed over a simple network protocal) database for storing numbers that change over time and graphing them.
 
-* whisper: database library, stores data in a file: meta info in a header, then "archive sections" with many `time,value,time,value` pairs.
-* carbon-cache: back-end daemon built on [Twisted](https://twistedmatrix.com/trac/) so it can talk to many clients at once.
-* Front end UI
+- whisper: database library, stores data in a file: meta info in a header, then "archive sections" with many `time,value,time,value` pairs.
+- carbon-cache: back-end daemon built on [Twisted](https://twistedmatrix.com/trac/) so it can talk to many clients at once.
+- Front end UI
 
 Data is sent to carbon over a tcp connection (it doesn't reply! It just listens). The data looks like this:
 
@@ -88,3 +88,15 @@ name.of.thing [space] value [space] unix epoch timestamp
 ```
 
 The WebApp (UI) generates graph rasters (pixel based images) on demand, based on parameters passed in via a querystring that look like the kind of formulas you might put into excel. It has a "Composer UI" which looks to be a large number of options to guide people through demanding graphs. This rendering became a performance issue, but caching the graph images and the data used to render them helped.
+
+## 8. [Hadoop](http://aosabook.org/en/hdfs.html)
+
+A distributed file system and framework for splitting up tasks running on massive amounts of data.
+
+From the smallest level to the largest:
+
+- HDFS Client. Runs operations on the data. Multiple per DataNode so multiple operations can be run simultaneously.
+- DataNode. Holds a slice of data, typically they have 3 replica DataNodes for each slice of data
+- NameNode. Filesystem metadata (permissions, access times, etc) and a "namespace image" which keeps track of data in a cluster, typically one NameNode in a cluster and several thousand DataNodes. The namespace image is a representation of directories, files and data blocks within the file (~128mb per block). This representation is built up by things called "iNodes".
+
+The namespace image is held in RAM by the NameNode. It also has a copy persisted to it's local filesystem. (yep a singular copy). Any client requests are added to a "journal". When restarted the NameNode initializes the namespace image from the filesystem then replays the requests from the journal.
