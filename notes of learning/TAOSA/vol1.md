@@ -128,4 +128,4 @@ Reads: The NameNode gives the client a list of replica DataNodes. Each is tried 
 
 Only one client can write to a specific file, but multiple clients can read from a file.
 
-The physical placement of Nodes (servers) in racks is also considered. A balance between performance (proximity) and reliability (duplication accross racks) is aimed at, it's a bit dense so read up on those details in the original article if you wish!
+The physical placement of Nodes (servers) in racks is also considered. A balance between performance (proximity) and reliability (duplication accross racks) is aimed at, it's a bit dense so read up on those details in the original article if you wish! (8.3.2)
