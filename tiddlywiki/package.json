@@ -1,0 +1,17 @@
+{
+  "name": "tiddlywiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tiddlywiki --server",
+    "build": "tiddlywiki --build && del ./public && copyfiles './output/**/*' ./public/ -u 1 && del ./output"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.1.0",
+    "del-cli": "^1.1.0",
+    "tiddlywiki": "^5.1.17"
+  },
+  "author": "",
+  "license": "ISC"
+}
