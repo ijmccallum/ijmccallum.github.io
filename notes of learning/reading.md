@@ -7,7 +7,7 @@
 * [ ] probabilistic reasoning in intelligent systems networks of plausible inference
 * [ ] causality models reasoning and inference
 * [ ] https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g a11y playlist
-* [ ] https://www.youtube.com/watch?v=EashgVqboWo subscrivbe to that channel! https://www.youtube.com/watch?v=ho5PnBOoacw and that one!
+* [ ] https://www.youtube.com/watch?v=EashgVqboWo subscribe to that channel! https://www.youtube.com/watch?v=ho5PnBOoacw and that one!
 
 ## [Functional-Light-JS](https://github.com/getify/Functional-Light-JS)
 
@@ -19,5 +19,5 @@ In depth overviews / critiques of the system designs behind some great open sour
 
 ## Articles
 
-* [x] https://engineering.instagram.com/search-architecture-eeb34a936d3a Quick overview of instagrams search process -mentiones a few technologies but they seem facebook specific.
-* [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is useing Node at. Node marketing!
+* [x] https://engineering.instagram.com/search-architecture-eeb34a936d3a Quick overview of instagrams search process -mentions a few technologies but they seem facebook specific.
+* [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is using Node at. Node marketing!
