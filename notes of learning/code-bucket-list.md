@@ -8,6 +8,8 @@
 - [ ] Python
 - [ ] Go
 - [ ] C/C++
+- [ ] Rust
+- [ ] Cobol 
 
 https://developers.google.com/machine-learning/crash-course/prereqs-and-prework  
 https://strapi.io/demo for any new APIs with basic content that I/a client creates  
@@ -21,6 +23,7 @@ https://github.com/i0natan/nodebestpractices Node best practices
 
 - [x] Make a [Static site generator](https://www.npmjs.com/package/mini-site-generator) just using js template strings.
 - [ ] Betes tracker: list foods you eat, rough in blood sugar graphs & insulin. Multiple users to aggregate data for speed of relative digestion / relative impact... in progress!
+- [ ] Garden management app - list flowers / timeline for caring
 - [ ] Boat picks sharing web app thing... dad's idea
 - [ ] Library sharer - unless a good one exists already
 - [ ] Whisky Tracker: point tracking - one on one ...
@@ -36,9 +39,12 @@ https://github.com/i0natan/nodebestpractices Node best practices
 - [ ] Build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
 - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means... built on [Electron](http://electron.atom.io/)
 - [ ] npm module to ping a server every time you do a build in order to track who has a project set up and how long it's been since they worked on it. (would be an internal tool for agencies, no so much open source). Could include data like file sizes etc.
+- [ ] Translate [elegant-error-handling](https://jrsinclair.com/articles/2019/elegant-error-handling-with-the-js-either-monad/) into my own words
 
-## Tools to learn:
+## Tools to learn / research / evaluate:
 
+- [ ] Honeycomb.io
+- [ ] StatsD
 - [ ] https://sailsjs.com/get-started
 - [ ] Vue
 - [ ] Angular n.n
@@ -47,7 +53,6 @@ https://github.com/i0natan/nodebestpractices Node best practices
 - [ ] rxjs
 - [ ] Jenkins (for work)
 - [ ] IBM MQ (for work)
-- [ ] Cobol? (for work)
 
 ## 30 Day Challenges
 
@@ -58,8 +63,7 @@ https://github.com/i0natan/nodebestpractices Node best practices
 
 ## Reading list
 
-## Reading list
-
+- [ ] Google's site reliability engineering book
 - [ ] https://www.youtube.com/watch?v=aL6SouuO0_k rewatch and work up my own example. Possibly use in WL
 - [ ] https://github.com/Developer-Y/Scalable-Software-Architecture
 - [ ] http://aosabook.org/en/index.html
@@ -76,7 +80,7 @@ https://github.com/i0natan/nodebestpractices Node best practices
 ```js
 function stop(whatTime) {
   if (whatTime == "hammer time") {
-    //add a hammer time gif from giphy, flash the colors on the site
+    console.log(`duuu du du du      du du      du du`);
   }
 }
 
