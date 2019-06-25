@@ -39,6 +39,9 @@ https://github.com/i0natan/nodebestpractices Node best practices
 - [ ] Build a learning demo that explains graphically how Molecules, atoms, sub atomic particles, fermions / bosons / spin etc works.
 - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means... built on [Electron](http://electron.atom.io/)
 - [ ] npm module to ping a server every time you do a build in order to track who has a project set up and how long it's been since they worked on it. (would be an internal tool for agencies, no so much open source). Could include data like file sizes etc.
+
+## Article ideas:
+
 - [ ] Translate [elegant-error-handling](https://jrsinclair.com/articles/2019/elegant-error-handling-with-the-js-either-monad/) into my own words
 
 ## Tools to learn / research / evaluate:
