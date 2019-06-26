@@ -8,10 +8,16 @@ Pretty much my own "Awesome list" of dev things whenever there's a moment to spa
 
 - [ShopTalk](http://ijmccallum.github.io/) Back and forth front end banter with a few different episode formats, "rapidfire" answering loads of listener questions, som e interviews, but mostly banter. Covers tech stuff, with opinions thrown in to more of the soft skills side of things. The second podcast I started listening to after Serial!
 - [Codepen Radio](https://blog.codepen.io/radio/) The story behind Codepen, it starts off with the three founders talking about tech / start up issues. Later episodes have switched to more of an interview style show run by later additions to their team as CodePen has grown.
-- **This Developers Life** A short series of podcasts about life as a developer. I think this may have been my third development podcast, after this it gets a bit hazy - too many to remember!
-- **Javascript Jabber** Weekly chats and interviews about javascript, it's pretty wide ranging between soft and hard skills too.
-- **Does Not Compute** A couple of developers chatting about development, they lean more towards the back end but client side code does make appearances!
-- 
+- [This Developers Life](http://thisdeveloperslife.com/) A short series of podcasts about life as a developer. It's been a while since I listened through this one, can't remember details!
+- [Javascript Jabber](https://devchat.tv/js-jabber/) Weekly chats and interviews about javascript, it's pretty wide ranging between soft and hard skills too. There are _loads_ that go back years, probably not a good one to binge through unless you're into the history of the web.
+- [Does Not Compute](https://spec.fm/podcasts/does-not-compute) A couple of developers chatting about development, they lean more towards the back end but client side code does make appearances!
+- [The Changelog](https://changelog.com/podcasts), few podcasts here (such pretty logos!) I listen to The Changelog, RFC & JS Party, Informal chats and interviews covering industry news, conferences, again there are _loads_ of these so probably worth just listening to them as they come rather than binging.
+- [Full Stack Radio](http://www.fullstackradio.com/) Interviews with developers, a very wide range of technologies.
+- [Scale Your Code](https://scaleyourcode.com/) A series of interviews with developers / tech directors / people from some larger well known companies about the challenges of developing at huge scales.
+- [Soft Skills Engineering](https://softskills.audio/) Listeners submit questions, these two answer with examples from their own experience. Purely about the non technical stuff surrounding development careers. Loads of banter, good fun!
+- [Style Guide Podcast](http://styleguides.io/podcast/) From styleguides.io, this is a series of interviews with developers who have created styleguides.
+- [Syntax](https://syntax.fm/) Like many of these, 2 developers chatting about development! These two run their own tutorial businesses & do contracting, so it's an interesting view into that world as well.
+- [Toolsday](https://spec.fm/podcasts/toolsday) Themed chats about development tools by 2 front end devs at IBM. ~20mins and pretty informal with the occasional guest appearance.
 
 ### Other podcasts
 
