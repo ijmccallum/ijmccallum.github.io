@@ -1,5 +1,7 @@
 # Quick App prototyping / bootstrapping
 
+Trying to figure out the best way to kickstart an app when a new idea rolls around.
+
 _You can see how this is a hard thing to google_
 
 * Auth - signup, login. (password recovery would be an awesome bonus!)

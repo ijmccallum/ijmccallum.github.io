@@ -1,5 +1,7 @@
 # Arangojs
 
+A graph DB I was looking at / playing with while trying to build a version of WikiLogic. The original set up was to use Neo4J, but that seemed to be eating a lot of compute resources for our wee free servers, arango looked to be a better / easier way forward. That project has since stalled, I may well return though! For now know that this is probably a little stale.
+
 _Reading through the sourcecode. This is only half the story. Open the arangojs repo alongside this chunk of writing and read through them together. Assuming they haven't fallen out of sync._
 
 ---
