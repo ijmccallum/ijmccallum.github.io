@@ -1,4 +1,8 @@
-# CSS Cache
+# Project ideas
+
+Some slightly more fleshed out ideas for things to build.
+
+## CSS Cache
 
 * atomic classes (to begin, this may expand)
 * page of html with atomic styles inline in the head
@@ -26,8 +30,13 @@ Request for page 2 _with data_: style.a.b.c - div.b.c
 
 # Culture ideas!
 
-Because getting a good culture in the working environment can be a tricksy thing, 
-these are some ideas of things to implement that hopefully feel a little less corporate.
+Because sometimes at work someone in some meeting will ask for ideas on how to improve things, these are some things that might be offered up!
+
+## Slack Houses
+
+(or chat system of choice)
+
+Randomly assign new joiners to a "house" (think Harry Potter houses). Every month/quarter/year have some kind of weird off the wall competition running and notify your chat system of pointes being gained. Endless stuff you ca do here! Swap / trade people between houses, keep competitions secret so folk have to figure out what it is, keep house membership secret so people have to work out who's in what house / people can pretend to be in other houses.
 
 ## Open Invites
 

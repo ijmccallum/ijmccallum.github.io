@@ -21,6 +21,8 @@ Pretty much my own "Awesome list" of dev things whenever there's a moment to spa
 
 ### Other podcasts
 
+- [Ear Hustle]...
+
 ## Blog links
 
 * https://news.ycombinator.com/
