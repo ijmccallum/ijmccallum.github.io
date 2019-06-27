@@ -2,6 +2,10 @@
 
 Some slightly more fleshed out ideas for things to build.
 
+## JS Complexity Report
+
+There are a few projects out there, finding it hard to get one that works. The building blocks must be out there, would be cool to set up some kind of graphing thing! A simple npm install / the federated package manager install. Maybe one package to create the report, others to visulalise it, maybe an online service?
+
 ## CSS Cache
 
 * atomic classes (to begin, this may expand)
