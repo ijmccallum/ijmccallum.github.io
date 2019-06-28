@@ -1,6 +1,6 @@
 # Code Bucket list / Things I don't know
 
-## Languages to work with in a production app:
+## Languages to work with in a production app
 
 - [x] JavaScript _Love it! Bread and butter._
 - [ ] Typescript
@@ -11,6 +11,23 @@
 - [ ] Rust
 - [ ] Cobol 
 
+## Tools to learn / research / evaluate
+
+- [ ] WebAssembly
+- [ ] Honeycomb.io
+- [ ] StatsD
+- [ ] https://sailsjs.com/get-started
+- [ ] Vue
+- [ ] Angular n.n
+- [ ] d3 in depth
+- [ ] immutable.js
+- [ ] rxjs
+- [ ] Jenkins (for work)
+- [ ] IBM MQ (for work)
+- [ ] [Istio](https://istio.io/docs/concepts/what-is-istio/)
+- [ ] [Rancher](https://rancher.com)
+- [ ] [Pa11y](http://pa11y.org/)
+
 https://developers.google.com/machine-learning/crash-course/prereqs-and-prework  
 https://strapi.io/demo for any new APIs with basic content that I/a client creates  
 http://swaggerstats.io/ to monitor the strapi api?  
@@ -19,7 +36,7 @@ https://www.elastic.co/ Elastic search! All Open apparently :)
 https://cloudplatform.googleblog.com/2018/03/introducing-Skaffold-Easy-and-repeatable-Kubernetes-development.html?m=1
 https://github.com/i0natan/nodebestpractices Node best practices
 
-## Project Ideas:
+## Project Ideas
 
 - [x] Make a [Static site generator](https://www.npmjs.com/package/mini-site-generator) just using js template strings.
 - [ ] Betes tracker: list foods you eat, rough in blood sugar graphs & insulin. Multiple users to aggregate data for speed of relative digestion / relative impact... in progress!
@@ -40,28 +57,20 @@ https://github.com/i0natan/nodebestpractices Node best practices
 - [ ] Open Source P2P social network, this must exist already: something that does not connect to a central server & can communicate over wifi / bluetooth / any other available means... built on [Electron](http://electron.atom.io/)
 - [ ] npm module to ping a server every time you do a build in order to track who has a project set up and how long it's been since they worked on it. (would be an internal tool for agencies, no so much open source). Could include data like file sizes etc.
 
-## Article ideas:
+## Articles to write
 
 - [ ] Translate [elegant-error-handling](https://jrsinclair.com/articles/2019/elegant-error-handling-with-the-js-either-monad/) into my own words
 
-## Tools to learn / research / evaluate:
+## Articles to read
 
-- [ ] Honeycomb.io
-- [ ] StatsD
-- [ ] https://sailsjs.com/get-started
-- [ ] Vue
-- [ ] Angular n.n
-- [ ] d3 in depth
-- [ ] immutable.js
-- [ ] rxjs
-- [ ] Jenkins (for work)
-- [ ] IBM MQ (for work)
-- [ ] [Istio](https://istio.io/docs/concepts/what-is-istio/)
-- [ ] [Rancher](https://rancher.com)
-- [ ] [Pa11y](http://pa11y.org/)
+* [x] https://engineering.instagram.com/search-architecture-eeb34a936d3a Quick overview of instagrams search process -mentions a few technologies but they seem facebook specific.
+* [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is using Node at. Node marketing!
+
 
 
 ## 30 Day Challenges
+
+Every day for a month look up & do a quick write up of any thing related to one of these topics.
 
 - [x] MDN
 - [ ] Node
@@ -85,9 +94,3 @@ https://github.com/i0natan/nodebestpractices Node best practices
   - [ ]
 - [Functional-Light-JS](https://github.com/getify/Functional-Light-JS) A deep run through of basic functional programming for JavaScript. It also helps solidify an understanding of JS, particularly scopes and closures. And it has an amazing line saying that immutable variables "reduce the surface area of surprise". Love that!
 - [The Architecture of Open Source Applications](http://aosabook.org/en/index.html) In depth overviews / critiques of the system designs behind some great open source projects.
-
-## Articles to write
-
-* [x] https://engineering.instagram.com/search-architecture-eeb34a936d3a Quick overview of instagrams search process -mentions a few technologies but they seem facebook specific.
-* [x] https://foundation.nodejs.org/wp-content/uploads/sites/50/2017/09/Nodejs-at-Uber.pdf Quick overview of the scale that Uber is using Node at. Node marketing!
-
