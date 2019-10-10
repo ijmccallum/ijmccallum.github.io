@@ -39,6 +39,7 @@ https://github.com/i0natan/nodebestpractices Node best practices
 ## Project Ideas
 
 - [x] Make a [Static site generator](https://www.npmjs.com/package/mini-site-generator) just using js template strings.
+- [ ] Life dashboard. Something to keep track of life goals, things you're doing towards those life goals. Also long term things to be aware of. A todo list that fades over time. Aknowledge that things change. Could be Federated, don't want it tied to one device - though it could be.
 - [ ] Betes tracker: list foods you eat, rough in blood sugar graphs & insulin. Multiple users to aggregate data for speed of relative digestion / relative impact... in progress!
 - [ ] Garden management app - list flowers / timeline for caring
 - [ ] Boat picks sharing web app thing... dad's idea

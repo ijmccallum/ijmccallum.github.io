@@ -25,8 +25,12 @@ Pretty much my own "Awesome list" of dev things whenever there's a moment to spa
 
 ## Blog links
 
-* https://news.ycombinator.com/
+### Dev blogs
+
+* https://web.dev/blog
+* https://blog.chromium.org/
 * https://v8project.blogspot.co.uk/ V8!
+* https://news.ycombinator.com/
 * https://medium.com/airbnb-engineering
 * https://sdtimes.com/ Tiny articles, everything tech, fast moving.
 * http://statuscode.com/ All the email newsletters!
@@ -41,6 +45,9 @@ Pretty much my own "Awesome list" of dev things whenever there's a moment to spa
 * http://technews.acm.org/ IT stuff that's generally over my head
 * https://lobste.rs/ kind of like HN?
 * https://addyosmani.com/blog/ occasional in depth thoughts on web dev/chrome things
+
+### Other blogs
+
 * https://www.quantamagazine.org/ in depth physics, beyond me, but a challenge is always nice!
 * https://www.symmetrymagazine.org/ more physics, less in depth though
 * https://phys.org/ even more physics!
